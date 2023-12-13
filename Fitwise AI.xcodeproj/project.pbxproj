@@ -7,18 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3ED8544E2B2A4117007C0B3D /* Fitwise_AIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8544D2B2A4117007C0B3D /* Fitwise_AIApp.swift */; };
-		3ED854502B2A4117007C0B3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8544F2B2A4117007C0B3D /* ContentView.swift */; };
+		3ED8544E2B2A4117007C0B3D /* Fitwise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8544D2B2A4117007C0B3D /* Fitwise.swift */; };
 		3ED854522B2A4117007C0B3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED854512B2A4117007C0B3D /* Assets.xcassets */; };
 		3ED854552B2A4117007C0B3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED854542B2A4117007C0B3D /* Preview Assets.xcassets */; };
+		3ED8545F2B2A419B007C0B3D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8545C2B2A419B007C0B3D /* HomeView.swift */; };
+		3ED854602B2A419B007C0B3D /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8545D2B2A419B007C0B3D /* EntryView.swift */; };
+		3ED854612B2A419B007C0B3D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8545E2B2A419B007C0B3D /* OnboardingView.swift */; };
+		3ED854712B2A41DF007C0B3D /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED854642B2A41DF007C0B3D /* ExerciseModel.swift */; };
+		3ED854722B2A41DF007C0B3D /* SupportingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED854652B2A41DF007C0B3D /* SupportingModels.swift */; };
+		3ED854732B2A41DF007C0B3D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED854662B2A41DF007C0B3D /* UserModel.swift */; };
+		3ED854742B2A41DF007C0B3D /* RoutineDayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED854672B2A41DF007C0B3D /* RoutineDayModel.swift */; };
+		3ED854752B2A41DF007C0B3D /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED854692B2A41DF007C0B3D /* Decoder.swift */; };
+		3ED854762B2A41DF007C0B3D /* RoutineGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8546A2B2A41DF007C0B3D /* RoutineGenerator.swift */; };
+		3ED854772B2A41DF007C0B3D /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 3ED8546B2B2A41DF007C0B3D /* exercises.json */; };
+		3ED854782B2A41DF007C0B3D /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8546C2B2A41DF007C0B3D /* Migrator.swift */; };
+		3ED854792B2A41DF007C0B3D /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8546E2B2A41DF007C0B3D /* Binding+Extension.swift */; };
+		3ED8547A2B2A41DF007C0B3D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED854702B2A41DF007C0B3D /* OnboardingViewModel.swift */; };
+		3ED8547D2B2A4201007C0B3D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3ED8547C2B2A4201007C0B3D /* Realm */; };
+		3ED8547F2B2A4201007C0B3D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3ED8547E2B2A4201007C0B3D /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3ED8544A2B2A4117007C0B3D /* Fitwise AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitwise AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3ED8544D2B2A4117007C0B3D /* Fitwise_AIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitwise_AIApp.swift; sourceTree = "<group>"; };
-		3ED8544F2B2A4117007C0B3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3ED8544D2B2A4117007C0B3D /* Fitwise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitwise.swift; sourceTree = "<group>"; };
 		3ED854512B2A4117007C0B3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED854542B2A4117007C0B3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3ED8545C2B2A419B007C0B3D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3ED8545D2B2A419B007C0B3D /* EntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		3ED8545E2B2A419B007C0B3D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3ED854642B2A41DF007C0B3D /* ExerciseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		3ED854652B2A41DF007C0B3D /* SupportingModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportingModels.swift; sourceTree = "<group>"; };
+		3ED854662B2A41DF007C0B3D /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3ED854672B2A41DF007C0B3D /* RoutineDayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDayModel.swift; sourceTree = "<group>"; };
+		3ED854692B2A41DF007C0B3D /* Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		3ED8546A2B2A41DF007C0B3D /* RoutineGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineGenerator.swift; sourceTree = "<group>"; };
+		3ED8546B2B2A41DF007C0B3D /* exercises.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exercises.json; sourceTree = "<group>"; };
+		3ED8546C2B2A41DF007C0B3D /* Migrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
+		3ED8546E2B2A41DF007C0B3D /* Binding+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
+		3ED854702B2A41DF007C0B3D /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ED8547F2B2A4201007C0B3D /* RealmSwift in Frameworks */,
+				3ED8547D2B2A4201007C0B3D /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +79,12 @@
 		3ED8544C2B2A4117007C0B3D /* Fitwise AI */ = {
 			isa = PBXGroup;
 			children = (
-				3ED8544D2B2A4117007C0B3D /* Fitwise_AIApp.swift */,
-				3ED8544F2B2A4117007C0B3D /* ContentView.swift */,
+				3ED8544D2B2A4117007C0B3D /* Fitwise.swift */,
+				3ED854622B2A41DF007C0B3D /* Models */,
+				3ED8546F2B2A41DF007C0B3D /* ViewModels */,
+				3ED8545B2B2A419B007C0B3D /* Views */,
+				3ED854682B2A41DF007C0B3D /* Managers */,
+				3ED8546D2B2A41DF007C0B3D /* Extensions */,
 				3ED854512B2A4117007C0B3D /* Assets.xcassets */,
 				3ED854532B2A4117007C0B3D /* Preview Content */,
 			);
@@ -65,6 +97,62 @@
 				3ED854542B2A4117007C0B3D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3ED8545B2B2A419B007C0B3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3ED8545C2B2A419B007C0B3D /* HomeView.swift */,
+				3ED8545D2B2A419B007C0B3D /* EntryView.swift */,
+				3ED8545E2B2A419B007C0B3D /* OnboardingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3ED854622B2A41DF007C0B3D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3ED854632B2A41DF007C0B3D /* Exercise */,
+				3ED854662B2A41DF007C0B3D /* UserModel.swift */,
+				3ED854672B2A41DF007C0B3D /* RoutineDayModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3ED854632B2A41DF007C0B3D /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				3ED854642B2A41DF007C0B3D /* ExerciseModel.swift */,
+				3ED854652B2A41DF007C0B3D /* SupportingModels.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		3ED854682B2A41DF007C0B3D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3ED854692B2A41DF007C0B3D /* Decoder.swift */,
+				3ED8546A2B2A41DF007C0B3D /* RoutineGenerator.swift */,
+				3ED8546B2B2A41DF007C0B3D /* exercises.json */,
+				3ED8546C2B2A41DF007C0B3D /* Migrator.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3ED8546D2B2A41DF007C0B3D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3ED8546E2B2A41DF007C0B3D /* Binding+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3ED8546F2B2A41DF007C0B3D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3ED854702B2A41DF007C0B3D /* OnboardingViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +171,10 @@
 			dependencies = (
 			);
 			name = "Fitwise AI";
+			packageProductDependencies = (
+				3ED8547C2B2A4201007C0B3D /* Realm */,
+				3ED8547E2B2A4201007C0B3D /* RealmSwift */,
+			);
 			productName = "Fitwise AI";
 			productReference = 3ED8544A2B2A4117007C0B3D /* Fitwise AI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +203,9 @@
 				Base,
 			);
 			mainGroup = 3ED854412B2A4116007C0B3D;
+			packageReferences = (
+				3ED8547B2B2A4201007C0B3D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 3ED8544B2B2A4117007C0B3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +222,7 @@
 			files = (
 				3ED854552B2A4117007C0B3D /* Preview Assets.xcassets in Resources */,
 				3ED854522B2A4117007C0B3D /* Assets.xcassets in Resources */,
+				3ED854772B2A41DF007C0B3D /* exercises.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +233,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ED854502B2A4117007C0B3D /* ContentView.swift in Sources */,
-				3ED8544E2B2A4117007C0B3D /* Fitwise_AIApp.swift in Sources */,
+				3ED8545F2B2A419B007C0B3D /* HomeView.swift in Sources */,
+				3ED854792B2A41DF007C0B3D /* Binding+Extension.swift in Sources */,
+				3ED854732B2A41DF007C0B3D /* UserModel.swift in Sources */,
+				3ED8544E2B2A4117007C0B3D /* Fitwise.swift in Sources */,
+				3ED854782B2A41DF007C0B3D /* Migrator.swift in Sources */,
+				3ED854722B2A41DF007C0B3D /* SupportingModels.swift in Sources */,
+				3ED8547A2B2A41DF007C0B3D /* OnboardingViewModel.swift in Sources */,
+				3ED854762B2A41DF007C0B3D /* RoutineGenerator.swift in Sources */,
+				3ED854752B2A41DF007C0B3D /* Decoder.swift in Sources */,
+				3ED854612B2A419B007C0B3D /* OnboardingView.swift in Sources */,
+				3ED854742B2A41DF007C0B3D /* RoutineDayModel.swift in Sources */,
+				3ED854602B2A419B007C0B3D /* EntryView.swift in Sources */,
+				3ED854712B2A41DF007C0B3D /* ExerciseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,6 +382,7 @@
 				DEVELOPMENT_TEAM = TWU2W43LJV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fitwise;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -285,11 +393,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keshav.Fitwise-AI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keshav.fitwise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,6 +415,7 @@
 				DEVELOPMENT_TEAM = TWU2W43LJV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fitwise;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,11 +426,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.keshav.Fitwise-AI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keshav.fitwise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,6 +459,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3ED8547B2B2A4201007C0B3D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3ED8547C2B2A4201007C0B3D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ED8547B2B2A4201007C0B3D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		3ED8547E2B2A4201007C0B3D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ED8547B2B2A4201007C0B3D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3ED854422B2A4116007C0B3D /* Project object */;
 }
