@@ -9,21 +9,19 @@ import SwiftUI
 import RealmSwift
 
 struct HomeView: View {
-    
     @ObservedResults(UserModel.self) var User
-    
+    @StateObject private var hvm = HomeViewModel()
+
     var body: some View {
-        
         let user = User.last
         
-        VStack {
-            Text("Bodytype: \(user!.bodyType.text)")
-            
-            Text("\(user!.experience.text)")
-            Text("\(user!.workoutFrequency.text)")
-            
-            Text("\(user!.goal.text)")
+        //based on the muscle groups thrown by the routineGenerator(), this code should pick out exercises
+        Button {
+            hvm.pickExercises()
+        } label: {
+         Text(verbatim: "Pick")
         }
+        
     }
 }
 

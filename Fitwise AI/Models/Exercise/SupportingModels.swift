@@ -12,7 +12,6 @@ class EquipmentModel: Object {
     @Persisted var name: String
     @Persisted var group: String
     @Persisted var Sdescription: String
-    
     convenience init(name: String, group: String, Sdescription: String) {
         self.init()
         self.name = name
@@ -28,7 +27,7 @@ class PrimaryMuscleGroupModel: Object {
     @Persisted var Sdescription: String
     @Persisted var display_name: String
     @Persisted var group: String
-    
+
     convenience init(activation_percent: Double, male_priority: Int, female_priority: Int, Sdescription: String, display_name: String, group: String) {
         self.init()
         self.activation_percent = activation_percent

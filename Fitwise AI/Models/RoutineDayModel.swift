@@ -36,7 +36,7 @@ extension RoutineDay {
 }
 
 enum MuscleGroupEnum: Int, PersistableEnum {
-    case back, biceps, chest, triceps, legs, shoulders, abs, bodyweight, cardio
+    case back, biceps, chest, triceps, legs, shoulders, abs, bodyweight, cardio, forearm
     
     var text: String {
         switch self {
@@ -49,6 +49,7 @@ enum MuscleGroupEnum: Int, PersistableEnum {
         case .triceps: return "Triceps"
         case .back: return "Back"
         case .legs: return "Legs"
+        case .forearm: return "Forearm"
         }
     }
     
