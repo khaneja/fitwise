@@ -51,9 +51,13 @@ struct OnboardingView: View {
                     fatalError("The onboarding state couldn't be found!")
                 }
             }
-            .navigationTitle("Progress bar?")
+//            .navigationTitle("Progress bar?")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Image(systemName: "bus")
+                }
+                
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
                         ovm.previous()

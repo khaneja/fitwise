@@ -8,16 +8,62 @@
 import Foundation
 import RealmSwift
 
-//We want this function to spit out routine in the form of routineDay, meaning routine day 1 -> group to target is this this and this.
+func generateRoutine() -> [RoutineDay] {
+    
+    let realm = try! Realm()
+    let target = realm.objects(UserModel.self).last?.workoutFrequency.int
 
-func routineGenerator() -> [RoutineDay] {
+    //TODO: Put these into a separate file
+    //TODO: Cardio
+    //TODO: 7-day split
+    
+    switch target {
+    case 2:
+        //Full Body x2 [No abs]
+        let day1 = RoutineDay(dayIndex: 1, muscleGroup: [.legs, .back, .chest, .biceps, .shoulders, .triceps])
+        let day2 = RoutineDay(dayIndex: 1, muscleGroup: [.legs, .back, .chest, .biceps, .shoulders, .triceps])
+        return [day1, day2]
+    case 3:
+        //Push Pull Legs
+        let day1 = RoutineDay(dayIndex: 1, muscleGroup: [.chest, .shoulders, .triceps, .abs])
+        let day2 = RoutineDay(dayIndex: 2, muscleGroup: [.back, .biceps, .abs])
+        let day3 = RoutineDay(dayIndex: 3, muscleGroup: [.legs, .abs])
+        return [day1, day2, day3]
+    case 4:
+        //4 Day Classic "Bro-ey" Split
+        let day1 = RoutineDay(dayIndex: 1, muscleGroup: [.chest, .triceps, .abs])
+        let day2 = RoutineDay(dayIndex: 2, muscleGroup: [.back, .biceps, .abs])
+        let day3 = RoutineDay(dayIndex: 3, muscleGroup: [.shoulders, .abs])
+        let day4 = RoutineDay(dayIndex: 4, muscleGroup: [.legs, .abs])
+        return [day1, day2, day3, day4]
+    case 5:
+        //Push Pull Legs Upper Lower (PPLUL)
+        let day1 = RoutineDay(dayIndex: 1, muscleGroup: [.chest, .shoulders, .triceps, .abs])
+        let day2 = RoutineDay(dayIndex: 2, muscleGroup: [.back, .biceps, .abs])
+        let day3 = RoutineDay(dayIndex: 3, muscleGroup: [.legs, .abs])
+        let day4 = RoutineDay(dayIndex: 4, muscleGroup: [.chest, .back, .shoulders, .biceps, .triceps])
+        let day5 = RoutineDay(dayIndex: 5, muscleGroup: [.legs, .abs])
+        return [day1, day2, day3, day4, day5]
+    case 6:
+        //Push Pull Legs x2
+        let day1 = RoutineDay(dayIndex: 1, muscleGroup: [.chest, .shoulders, .triceps, .abs])
+        let day2 = RoutineDay(dayIndex: 2, muscleGroup: [.back, .biceps, .abs])
+        let day3 = RoutineDay(dayIndex: 3, muscleGroup: [.legs, .abs])
+        let day4 = RoutineDay(dayIndex: 4, muscleGroup: [.chest, .shoulders, .triceps, .abs])
+        let day5 = RoutineDay(dayIndex: 5, muscleGroup: [.back, .biceps, .abs])
+        let day6 = RoutineDay(dayIndex: 6, muscleGroup: [.legs, .abs])
+        return [day1, day2, day3, day4, day5, day6]
+    case 7:
+        fatalError("Split not programmed yet")
+    default:
+        let day1 = RoutineDay(dayIndex: 1, muscleGroup: [.chest, .shoulders, .triceps, .abs])
+        let day2 = RoutineDay(dayIndex: 2, muscleGroup: [.back, .biceps, .abs])
+        let day3 = RoutineDay(dayIndex: 3, muscleGroup: [.legs, .abs])
+        return [day1, day2, day3]
+    }
     
     //no if else to check for user target days in this branch
-    let day1 = RoutineDay(dayIndex: 1, muscleGroup: [.chest, .shoulders, .triceps, .abs])
-    let day2 = RoutineDay(dayIndex: 2, muscleGroup: [.back, .biceps, .abs])
-    let day3 = RoutineDay(dayIndex: 3, muscleGroup: [.legs, .abs])
     
-    return [day1, day2, day3]
 }
 
 /*
