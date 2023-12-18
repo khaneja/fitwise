@@ -13,7 +13,7 @@ final class OnboardingViewModel: ObservableObject {
     let exerciseModel = ExerciseModel()
     
     @Published var totalOnboardingStates: Int
-    @Published var onboardingState: Int = 0
+    @Published var onboardingState: Int = 2
     @Published var transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     @Published var slider: Int = 3
     
@@ -22,6 +22,7 @@ final class OnboardingViewModel: ObservableObject {
     //User
     @Published var gender: UserGenderEnum = .male
     @Published var name: String = ""
+    @Published var weightString: String = ""
     @Published var bodyType: UserBodyTypeEnum = .fat
     @Published var experience: UserExperienceEnum = .beginner
     @Published var goal: UserGoalEnum = .loseWeight
@@ -29,6 +30,10 @@ final class OnboardingViewModel: ObservableObject {
     @Published var workoutFrequency: UserWorkoutFrequencyEnum = .threetimes
     @Published var workoutDays: UserWorkoutDayEnum = .monday
     @Published var tempArray: [UserWorkoutDayEnum] = []
+    
+    var weight: Double {
+        return Double(weightString) ?? 50
+    }
     
     init(totalOnboardingStates: Int) {
         self.totalOnboardingStates = totalOnboardingStates
@@ -63,7 +68,7 @@ final class OnboardingViewModel: ObservableObject {
     
     
     func saveUser() {
-        let newUser = UserModel(name: name, gender: gender, workoutFrequency: workoutFrequency, goal: goal, bodyType: bodyType, experience: experience, workoutDuration: workoutDuration, workoutDays: tempArray)
+        let newUser = UserModel(name: name, gender: gender, workoutFrequency: workoutFrequency, goal: goal, bodyType: bodyType, weight: weight, experience: experience, workoutDuration: workoutDuration, workoutDays: tempArray)
         newUser.isUserOnboarded = true
         $userModel.append(newUser)
     }
@@ -88,7 +93,7 @@ final class OnboardingViewModel: ObservableObject {
                 realm.delete(realm.objects(ExerciseModel.self))
                 
                 for exercise in exercises {
-                    let newExercise = ExerciseModel(name: exercise.name, maleBwRatio: exercise.male_bw_ratio, femaleBwRatio: exercise.female_bw_ratio, aggressiveOverload: exercise.aggressive_overload, idJSON: exercise.id, paceCompatible: exercise.pace_compatible, repCompatible: exercise.rep_compatible, appIdJSON: exercise.app_id, powerLift: exercise.power_lift, hiitCompatible: exercise.hiit_compatible, notes: exercise.notes, highRepMovement: exercise.high_rep_movement, overloadable: exercise.overloadable, timeCompatible: exercise.time_compatible, twoSidedMovement: exercise.two_sided_movement)
+                    let newExercise = ExerciseModel(name: exercise.name, maleBwRatio: exercise.male_bw_ratio, femaleBwRatio: exercise.female_bw_ratio, aggressiveOverload: exercise.aggressive_overload, idJSON: exercise.id, paceCompatible: exercise.pace_compatible, repCompatible: exercise.rep_compatible, appIdJSON: exercise.app_id, powerLift: exercise.power_lift, hiitCompatible: exercise.hiit_compatible, notes: exercise.notes, highRepMovement: exercise.high_rep_movement, unweighted: exercise.unweighted, timeCompatible: exercise.time_compatible, twoSidedMovement: exercise.two_sided_movement)
                     newExercise.steps.append(objectsIn: exercise.steps)
                     
                     for equipment in exercise.equipment {

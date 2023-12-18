@@ -9,8 +9,10 @@ import SwiftUI
 
 struct OnboardingView: View {
     
-    @StateObject private var ovm = OnboardingViewModel(totalOnboardingStates: 7)
+    @StateObject private var ovm = OnboardingViewModel(totalOnboardingStates: 8)
     @FocusState var isNameFocused: Bool
+    @FocusState var isWightFocused: Bool
+
     
     var body: some View {
         NavigationStack{
@@ -25,26 +27,30 @@ struct OnboardingView: View {
                     nameView
                         .transition(ovm.transition)
                 case 2:
-                    bodyTypeView
+                    weightView
                         .transition(ovm.transition)
                         .padding()
                 case 3:
-                    experienceView
+                    bodyTypeView
                         .transition(ovm.transition)
                         .padding()
                 case 4:
-                    goalView
+                    experienceView
                         .transition(ovm.transition)
                         .padding()
                 case 5:
-                    workoutDurationView
+                    goalView
                         .transition(ovm.transition)
                         .padding()
                 case 6:
-                    frequencyView
+                    workoutDurationView
                         .transition(ovm.transition)
                         .padding()
                 case 7:
+                    frequencyView
+                        .transition(ovm.transition)
+                        .padding()
+                case 8:
                     workoutDaysView
                         .transition(ovm.transition)
                 default:
@@ -124,6 +130,31 @@ extension OnboardingView {
             }
             
         }
+    }
+    
+    
+    private var weightView: some View {
+        VStack {
+            Form {
+                TextField("Enter your weight", text: $ovm.weightString)
+                    .focused($isWightFocused, equals: true)
+                //TODO: WEIGHT ONLY IN KG
+                    .keyboardType(.decimalPad)
+
+                Button("Next") {
+                    isWightFocused = false
+                    ovm.next()
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .buttonStyle(.borderedProminent)
+                .padding(.vertical)
+                
+                .disabled(ovm.weight == nil)
+
+            }
+            
+        }
+        
     }
     
     private var bodyTypeView: some View {

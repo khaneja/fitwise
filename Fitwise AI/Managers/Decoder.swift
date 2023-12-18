@@ -35,14 +35,14 @@ struct Exercise: Decodable {
     let pace_compatible: Bool
     let id: String
     let muscle_groups: [MuscleGroups]
-    let rep_compatible: Bool
+    let rep_compatible: Bool //can do reps or not (e.g., elliptical)
     let app_id: String?
     let notes: String
     let hiit_compatible: Bool
     let power_lift: Bool
     let high_rep_movement: Bool
     let primary_muscle_groups: [PrimaryMuscleGroups]
-    let overloadable: Bool
+    let unweighted: Bool //can load weight or not
     let steps: [String]
     let two_sided_movement: Bool
     let name: String

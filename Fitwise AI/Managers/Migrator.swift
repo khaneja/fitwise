@@ -13,6 +13,7 @@ class Migrator  {
         updateSchema()
     }
     
+    //TODO: This might just the stupidest migrator out there.
     func updateSchema() {
         let config = Realm.Configuration(schemaVersion: 1) { migration, oldSchemaVersion in
             if oldSchemaVersion < 1 {

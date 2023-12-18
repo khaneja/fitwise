@@ -15,7 +15,17 @@ struct EntryView: View {
     var body: some View {
         ZStack {
             if let user = user.last, user.isUserOnboarded {
-                HomeView()
+                TabView {
+                    HomeView()
+                        .tabItem {
+                            Label("Home", systemImage: "dumbbell")
+                        }
+                    
+                    WorkoutView()
+                        .tabItem {
+                            Label("Workout", systemImage: "dumbbell")
+                        }
+                }
             } else {
                 OnboardingView()
             }

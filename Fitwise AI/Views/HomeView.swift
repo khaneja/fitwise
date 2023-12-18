@@ -11,35 +11,49 @@ import RealmSwift
 struct HomeView: View {
     @ObservedResults(UserModel.self) var User
     @StateObject private var hvm = HomeViewModel()
+
     
     var body: some View {
-        let user = User.last
-        
         let routineDays = generateRoutine()
         
+        //TODO: Right now, the current day is hardcoded. Make it dynamic!
+        let currentDay = 1
+        
         NavigationStack {
-            ScrollView {
-                VStack(alignment: .leading) {
+            VStack {
+                List {
+                    Section {
+                        Button("Start a Workout", systemImage: "plus") {
+                        }
+                    }
+                    
                     ForEach(routineDays, id: \.self) { day in
-                        Text("Day \(day.dayIndex)")
-                            .font(.title)
-                            .fontWeight(.semibold)
-                            .padding(.vertical)
-                            
-                        ForEach(day.muscleGroup, id: \.self) { muscleGroup in
-                            Text(muscleGroup.text)
-                                .font(.title2)
-                                .fontWeight(.medium)
-                            
-                            let exercises = hvm.getExercises(muscleGroup, 3)
-                            
-                            ForEach(exercises) { exercise in
-                                Text("\(exercise.name)")
+                        Section {
+                            #warning("Exercises are not sorted properly")
+                            //TODO: Sorting is bad! It should be as-it-is. Instead, it's picking muscle groups at random?
+                            ForEach(day.muscleGroup, id: \.self) { muscleGroup in
+                                Text(muscleGroup.text)
+                                    .font(.title2)
+                                    .fontWeight(.semibold)
+                                
+                                if day.dayIndex == currentDay {
+                                    let exercises = hvm.getExercises(muscleGroup)
+                                    
+                                    ForEach(exercises) { exercise in
+                                        Text("\(exercise.name)")
+                                            .padding(.leading, 15)
+                                    }
+                                }
                             }
+                        } header: {
+                            Text("Day \(day.dayIndex)")
+                                .font(.title3)
+                                .fontWeight(.semibold)
+                                .padding(.vertical, 3)
                         }
                     }
                 }
-                .padding()
+                .listStyle(.grouped)
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
             .navigationTitle("Fitwise")

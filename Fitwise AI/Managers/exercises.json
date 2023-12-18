@@ -82,7 +82,7 @@
       "aggressive_overload":false,
       "id":"00378d597167420a909f3643d652e523",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/23321201-Wheel-Rollout-female-Waist.jpg",
-      "overloadable":false,
+      "unweighted":true,
       "video_should_loop":true,
       "muscle_groups":[
          {
@@ -360,7 +360,7 @@
       ],
       "male_bw_ratio":0,
       "two_sided_movement":false,
-      "overloadable":false,
+      "unweighted":true,
       "historyOptional":[
          
       ],
@@ -392,7 +392,7 @@
       ],
       "male_bw_ratio":0,
       "power_lift":false,
-      "overloadable":false,
+      "unweighted":true,
       "female_bw_ratio":0,
       "historyOptional":[
          
@@ -548,7 +548,7 @@
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/21371201-Dumbbell-Arnold-Press-Shoulders.jpg",
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/21371201-Dumbbell-Arnold-Press-Shoulders.mp4",
       "power_lift":false,
-      "overloadable":true,
+      "unweighted":false,
       "equipment":[
          {
             "name":"Dumbbells",
@@ -929,7 +929,7 @@
       "video_should_loop":true,
       "pace_compatible":false,
       "power_lift":false,
-      "overloadable":false,
+      "unweighted":true,
       "aggressive_overload":false,
       "name":"Around The World Superman Hold",
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/34831201-Around-the-World-Superman-Hold-Hips.mp4"
@@ -938,7 +938,7 @@
       "high_rep_movement":false,
       "is_active":true,
       "app_id":"",
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "pace_compatible":false,
       "name":"Assisted Dip",
@@ -1224,7 +1224,7 @@
          }
       ],
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "historyOptional":[
          
       ],
@@ -1501,7 +1501,7 @@
          }
       ],
       "male_bw_ratio":0,
-      "overloadable":false,
+      "unweighted":true,
       "female_bw_ratio":0,
       "steps":[
          "Lie on the ground next to a bench in a supine position with your head facing upwards, legs fully extended in the air, and hands holding onto a bench.",
@@ -1617,7 +1617,7 @@
             "partial_media_url":"https:\/\/app.fitnessai.com\/musclegroups\/partial\/"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "female_bw_ratio":0,
       "rep_compatible":true,
       "steps":[
@@ -1800,7 +1800,7 @@
          }
       ],
       "aggressive_overload":false,
-      "overloadable":true,
+      "unweighted":false,
       "female_bw_ratio":0,
       "notes":"To increase the difficulty of this movement, keep your inactive leg in the air. The band can be wrapped around any stable object if a power rack or pole is not available.",
       "historyOptional":[
@@ -1962,7 +1962,7 @@
             "description":"These bands are usually the easiest to grip. If none are available, you can use a loop band instead."
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "time_compatible":false,
       "male_bw_ratio":0,
       "is_active":true,
@@ -2079,7 +2079,7 @@
          }
       ],
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "display_name":"Upper Chest",
@@ -2390,7 +2390,7 @@
       ],
       "two_sided_movement":false,
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false,
       "video_should_loop":true,
       "notes":"For added resistance, you can wrap the band around the power rack or pole more than once. The band can be wrapped around any stable object if a power rack or pole is not available.",
@@ -2460,7 +2460,7 @@
          "Inhale and allow your arms to extend outward, returning to the starting position."
       ],
       "id":"8fe589742461497e9482fc240378c200",
-      "overloadable":true,
+      "unweighted":false,
       "notes":"If you experience discomfort, you can optionally position the band at shoulder-level and perform this movement without leaning back. The band can be wrapped around any stable object if a power rack or pole is not available.",
       "aggressive_overload":false,
       "primary_muscle_groups":[
@@ -2633,7 +2633,7 @@
          "Continue to curl your body forward as far as you can while still keeping your lower back firmly planted on the ground, stopping lower than you would in a sit up.",
          "While continuing to keep your arms still and at the level of your shoulders, inhale and lower your body to the ground, returning to the starting position."
       ],
-      "overloadable":true,
+      "unweighted":false,
       "is_active":true,
       "aggressive_overload":false,
       "power_lift":false,
@@ -2793,7 +2793,7 @@
       "male_bw_ratio":0
    },
    {
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":false,
       "aggressive_overload":false,
       "pace_compatible":false,
@@ -3113,7 +3113,7 @@
             "id":"db0337adf0af4ff49dc5a4d6cb465126"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "male_bw_ratio":0
    },
    {
@@ -3134,7 +3134,7 @@
       "pace_compatible":false,
       "two_sided_movement":false,
       "name":"Band Face Pull",
-      "overloadable":false,
+      "unweighted":true,
       "muscle_groups":[
          {
             "image_url":"",
@@ -3340,7 +3340,7 @@
       "media_id":"40841201-band-horizontal-biceps-curl-male-upper-arms",
       "name":"Band High Curl",
       "notes":"For added benefit, hold the fully bent position for an extra 1 second before allowing your arms to extend and return to the starting position. The band can be wrapped around any stable object if a power rack or pole is not available.",
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "is_active":true,
@@ -3527,7 +3527,7 @@
          }
       ],
       "aggressive_overload":false,
-      "overloadable":true,
+      "unweighted":false,
       "name":"Band High Row",
       "is_active":true,
       "app_id":"",
@@ -3873,7 +3873,7 @@
          
       ],
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "id":"0c1a390ac9024bfcb2f7ee57bc5e7996",
       "high_rep_movement":false,
       "media_id":"41361201-band-cross-abduction-hips",
@@ -4084,7 +4084,7 @@
             "female_back_media_id":""
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/41441201-band-bent-over-lat-pulldown-back.mp4",
       "pace_compatible":false,
       "primary_muscle_groups":[
@@ -4161,7 +4161,7 @@
          "Continue until your arms are fully extended above your shoulders.",
          "Inhale and allow your arms to bend, returning to the starting position."
       ],
-      "overloadable":true,
+      "unweighted":false,
       "name":"Band Lying Tricep Extension",
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/41421201-band-lying-reverse-grip-pressdown-upper-arms.mp4",
       "is_active":true,
@@ -4429,7 +4429,7 @@
          "Inhale and allow your torso to return to the starting position.",
          "After all reps are completed, switch sides and repeat the movement. 10 reps prescribed means you should perform 10 reps on each side (20 total)."
       ],
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true
    },
    {
@@ -4620,7 +4620,7 @@
          "Inhale and lower your arms, allowing them to return to the starting position."
       ],
       "name":"Band Overhead Tricep Extension",
-      "overloadable":true,
+      "unweighted":false,
       "notes":"If your band is not long enough to allow you to fully extend your arms overhead, you can perform this movement by kneeling over the middle of a band instead. This will decrease ab and oblique involvement.",
       "power_lift":false,
       "pace_compatible":false,
@@ -4656,7 +4656,7 @@
          "Inhale and allow your arms to extend, returning them to the starting position."
       ],
       "media_id":"40851201-band-kneeling-preacher-curl-male-upper-arms",
-      "overloadable":true,
+      "unweighted":false,
       "notes":"If you have difficulty balancing, try widening your stance so that you feel more stable.  Continue to keep your arms shoulder-width apart. The band can be wrapped around any stable object if a power rack or pole is not available.",
       "female_bw_ratio":0,
       "male_bw_ratio":0,
@@ -4980,7 +4980,7 @@
             "display_name":"Obliques"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "equipment":[
          {
             "description":"These bands are usually the easiest to grip. If none are available, you can use a loop band instead.",
@@ -5107,7 +5107,7 @@
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/39711201-band-bent-over-rear-lateral-raise-male-shoulders.jpg",
       "video_should_loop":true,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/39711201-band-bent-over-rear-lateral-raise-male-shoulders.mp4",
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":false,
       "id":"c2a3d056cd724e33b086d214732f37a4",
       "media_id":"39711201-band-bent-over-rear-lateral-raise-male-shoulders",
@@ -5191,7 +5191,7 @@
    },
    {
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/41351201-band-split-squat-thighs.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "high_rep_movement":false,
       "female_bw_ratio":0,
       "historyOptional":[
@@ -5580,7 +5580,7 @@
          }
       ],
       "two_sided_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "historyOptional":[
          
       ],
@@ -6059,7 +6059,7 @@
          }
       ],
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/41371201-band-squat-twist-waist.mp4",
-      "overloadable":true,
+      "unweighted":false,
       "male_bw_ratio":0,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/41371201-band-squat-twist-waist.jpg",
       "power_lift":false,
@@ -6242,7 +6242,7 @@
          }
       ],
       "video_should_loop":true,
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "male_bw_ratio":0,
       "time_compatible":false,
@@ -6276,7 +6276,7 @@
       "video_should_loop":true,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/09331201-Band-twist-Waist.mp4",
       "pace_compatible":false,
-      "overloadable":false,
+      "unweighted":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/09331201-Band-twist-Waist.jpg",
       "equipment":[
          {
@@ -6439,7 +6439,7 @@
          }
       ],
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/00311201-Barbell-Curl-Upper-Arms.mp4",
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "historyOptional":[
          
@@ -6603,7 +6603,7 @@
       "app_id":"",
       "male_bw_ratio":0,
       "high_rep_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "id":"00014031df35420295b734604fb8dde3",
       "steps":[
          "Stand upright with your arms fully extended, gripping the barbell slightly wider than shoulder-width apart with palms facing away from you.",
@@ -6757,7 +6757,7 @@
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/00541201-Barbell-Lunge-Thighs.mp4",
       "is_active":true,
       "pace_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "video_url":"",
@@ -6934,7 +6934,7 @@
       "is_active":true,
       "hiit_compatible":true,
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "time_compatible":false,
       "notes":"Make sure you do not raise the barbell above the level of your shoulder.",
       "power_lift":false,
@@ -7084,7 +7084,7 @@
       "high_rep_movement":false,
       "pace_compatible":false,
       "is_active":true,
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "male_front_media_id":"",
@@ -7293,7 +7293,7 @@
          }
       ],
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "female_bw_ratio":0,
       "notes":"If the barbell feels uncomfortable on your hips, you can place a towel or other pad between your hips and the barbell to make the movement more pleasant. ",
       "muscle_groups":[
@@ -7425,7 +7425,7 @@
          "Continue until your arms are fully flexed and the barbell cannot be curled any further.",
          "Inhale and lower the barbell back down, returning to the starting position."
       ],
-      "overloadable":true,
+      "unweighted":false,
       "notes":"If your wrists feel uncomfortable, you can substitute a regular barbell for the EZ curl bar.",
       "is_active":true,
       "power_lift":false,
@@ -7692,7 +7692,7 @@
       "video_should_loop":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/00801201-Barbell-Reverse-Curl-Forearm.jpg",
       "pace_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "power_lift":false,
       "female_bw_ratio":0
@@ -7766,7 +7766,7 @@
       ],
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/00791201-Barbell-Revers-Wrist-Curl-II-Forearms.mp4",
       "name":"Barbell Reverse Wrist Curl",
-      "overloadable":true,
+      "unweighted":false,
       "high_rep_movement":false,
       "power_lift":false,
       "equipment":[
@@ -7979,7 +7979,7 @@
       "time_compatible":false,
       "female_bw_ratio":0.29,
       "pace_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "male_bw_ratio":0.455,
       "high_rep_movement":false,
       "media_id":"11651201-Barbell-Standing-Military-Press-without-rack-Shoulders",
@@ -8145,7 +8145,7 @@
             "name":"Barbell"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "media_id":"23701201-Barbell-Split-Squat-female-Thighs",
       "video_should_loop":true,
       "two_sided_movement":true,
@@ -8179,7 +8179,7 @@
       "rep_compatible":true,
       "time_compatible":false,
       "app_id":"",
-      "overloadable":true,
+      "unweighted":false,
       "male_bw_ratio":0,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/22271201-Barbell-Single-Leg-Split-Squat-female-Thighs.jpg",
       "two_sided_movement":true,
@@ -8633,7 +8633,7 @@
       "high_rep_movement":false,
       "id":"0004a9c810684d6b879f21c1dea27fa6",
       "notes":"Grip the barbell very tightly. ",
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "media_id":"01171201-Barbell-Sumo-Deadlift-Hips"
    },
@@ -8649,7 +8649,7 @@
       ],
       "aggressive_overload":false,
       "high_rep_movement":false,
-      "overloadable":false,
+      "unweighted":true,
       "notes":"To decrease the difficulty, shorten the ropes by wrapping them around the pole multiple times.",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/01281201-Battling-Ropes.jpg",
       "muscle_groups":[
@@ -8956,7 +8956,7 @@
       "hiit_compatible":true,
       "video_should_loop":true,
       "two_sided_movement":false,
-      "overloadable":false,
+      "unweighted":true,
       "id":"0029eec2c1b74fb88aceba3f149e7cbb",
       "power_lift":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/13991201-Bench-dip-on-floor-Upper-Arms.jpg",
@@ -9081,7 +9081,7 @@
       "aggressive_overload":true,
       "high_rep_movement":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/00251201-Barbell-Bench-Press-Chest.mp4",
-      "overloadable":true,
+      "unweighted":false,
       "video_should_loop":true,
       "notes":"By having a spotter help you unrack the bar at the start of the lift, you will have an easier time during the rest of the lift. Just make sure you don't let them touch the barbell once you start benching unless you need help racking the barbell. ",
       "media_id":"00251201-Barbell-Bench-Press-Chest",
@@ -9314,7 +9314,7 @@
       "id":"00252c71e0c04f8cb2b296876ced2887",
       "notes":"To make this exercise easier, you can bring your feet closer towards the bench and allow your knees to bend.",
       "power_lift":false,
-      "overloadable":false,
+      "unweighted":true,
       "equipment":[
          {
             "group":"Benches",
@@ -9777,7 +9777,7 @@
          }
       ],
       "video_should_loop":true,
-      "overloadable":true,
+      "unweighted":false,
       "equipment":[
          {
             "video_url":"",
@@ -10033,7 +10033,7 @@
       "hiit_compatible":false,
       "app_id":"1",
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/00271201-Barbell-Bent-Over-Row-Back.mp4",
       "steps":[
          "Place a barbell on the floor and approach it with your shins several inches away.",
@@ -10045,7 +10045,7 @@
       "is_active":true
    },
    {
-      "overloadable":false,
+      "unweighted":true,
       "high_rep_movement":false,
       "pace_compatible":false,
       "time_compatible":true,
@@ -10392,7 +10392,7 @@
       "video_should_loop":true,
       "time_compatible":false,
       "name":"Cable Assisted Nordic Leg Curl",
-      "overloadable":true,
+      "unweighted":false,
       "id":"003b5ae6f6f24d3b9530dbc819ef069a",
       "high_rep_movement":false,
       "pace_compatible":false,
@@ -10410,7 +10410,7 @@
       "high_rep_movement":false,
       "rep_compatible":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/10661201-Cable-Standing-Chest-Press-Chest.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "male_bw_ratio":0,
       "muscle_groups":[
          {
@@ -10792,7 +10792,7 @@
          "Inhale and lower your arms back down, returning to the starting position."
       ],
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "equipment":[
          {
             "id":"97052bf057494bc2b1d8ebe509c68f85",
@@ -10839,7 +10839,7 @@
          "Inhale and allow your elbows to extend and arms to raise, returning to the starting position."
       ],
       "high_rep_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/01531201-Cable-Cross-over-Lateral-Pulldown-Back.mp4",
       "primary_muscle_groups":[
          {
@@ -11133,7 +11133,7 @@
       "rep_compatible":true,
       "media_id":"16071201-Cable-Biceps-Curl-SZ-bar-Upper-arms",
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "female_bw_ratio":0,
       "historyOptional":[
          
@@ -11244,7 +11244,7 @@
       "notes":"Focus on squeezing the biceps consciously throughout the entire movement for the greatest effect.",
       "is_active":true,
       "name":"Cable Curl With Lat Bar",
-      "overloadable":true,
+      "unweighted":false,
       "female_bw_ratio":0,
       "male_bw_ratio":0,
       "pace_compatible":false,
@@ -11583,7 +11583,7 @@
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/01571201-Cable-Deadlift-Thighs.mp4",
       "power_lift":false,
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "pace_compatible":false
    },
    {
@@ -11757,7 +11757,7 @@
       "power_lift":false,
       "aggressive_overload":false,
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "steps":[
          "Stand upright with your hands in front of your shoulders, holding the bar with an overhand grip.",
          "Exhale and raise the bar, keeping your arms straight. Avoid using your legs or back to lift the bar.",
@@ -11772,7 +11772,7 @@
          
       ],
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/01681201-Cable-Hip-Adduction-Thighs.mp4",
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false,
       "power_lift":false,
       "muscle_groups":[
@@ -11928,7 +11928,7 @@
       ],
       "hiit_compatible":true,
       "app_id":"",
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "file_extension":".png",
@@ -12098,7 +12098,7 @@
       "high_rep_movement":false,
       "aggressive_overload":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/08801201-Cable-standing-hip-extension-version-2-Hips.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "notes":"If you don't have the attachment shown in the video, you can always improvise with a regular pulley handle, but it is not ideal.",
       "time_compatible":false,
@@ -12240,7 +12240,7 @@
             "is_active":true
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "steps":[
          "Stand upright and grab the cable on either side of you with your opposing hand, holding them with a neutral grip.",
          "With your arms straight, exhale and raise them out to your sides.",
@@ -12428,7 +12428,7 @@
       "high_rep_movement":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/01851201-Cable-Lying-Fly-Chest.mp4",
       "pace_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "notes":"Consciously focus on squeezing your chest at the point where your hands are about to meet for added benefit.",
       "male_bw_ratio":0
    },
@@ -12540,7 +12540,7 @@
       ],
       "hiit_compatible":true,
       "name":"Cable Oblique Crunch",
-      "overloadable":false,
+      "unweighted":true,
       "high_rep_movement":false,
       "aggressive_overload":false,
       "video_should_loop":true,
@@ -12720,7 +12720,7 @@
       "historyOptional":[
          
       ],
-      "overloadable":true,
+      "unweighted":false,
       "id":"2aba101cdbf64aa3b3ad0a9578195bb6",
       "male_bw_ratio":0.303,
       "video_should_loop":true,
@@ -12821,7 +12821,7 @@
       ],
       "male_bw_ratio":0,
       "media_id":"01661201-Cable-Hammer-Curl-Forearm",
-      "overloadable":true,
+      "unweighted":false,
       "time_compatible":false,
       "muscle_groups":[
          {
@@ -12929,7 +12929,7 @@
       "id":"0038a3ec22fc4e41be59788bbd9ea2ca",
       "aggressive_overload":false,
       "time_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":false,
       "muscle_groups":[
          {
@@ -13195,7 +13195,7 @@
       "time_compatible":false,
       "video_should_loop":true,
       "aggressive_overload":false,
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "app_id":"12",
       "is_active":true,
@@ -13621,7 +13621,7 @@
          }
       ],
       "name":"Cable Row With Lat Bar",
-      "overloadable":true,
+      "unweighted":false,
       "pace_compatible":false
    },
    {
@@ -13736,7 +13736,7 @@
          "Continue until your elbows pass your thighs.",
          "Inhale and raise your torso up, returning to the starting position."
       ],
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/02121201-Cable-Seated-Crunch-Waist.mp4",
       "equipment":[
          {
@@ -13952,7 +13952,7 @@
       ],
       "female_bw_ratio":0,
       "app_id":"",
-      "overloadable":true,
+      "unweighted":false,
       "pace_compatible":false,
       "aggressive_overload":false,
       "historyOptional":[
@@ -14033,7 +14033,7 @@
       "time_compatible":false,
       "video_should_loop":true,
       "notes":"If you feel discomfort in your lower back during this movement, you may be leaning too far backward. Try to maintain an upright torso throughout the entire movement. If you struggle with this, squeezing your glutes and abs can help.",
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "equipment":[
          {
@@ -14363,7 +14363,7 @@
       "time_compatible":false,
       "two_sided_movement":false,
       "power_lift":false,
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false
    },
    {
@@ -14441,7 +14441,7 @@
          }
       ],
       "high_rep_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "media_id":"02221201-Cable-Side-Bend-Waist",
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/02221201-Cable-Side-Bend-Waist.mp4",
       "hiit_compatible":true,
@@ -14719,7 +14719,7 @@
             "full_media_url":"https:\/\/app.fitnessai.com\/musclegroups\/full\/"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "media_id":"02301201-Cable-Standing-Lift-waist",
       "time_compatible":false,
@@ -14870,7 +14870,7 @@
             "group":"Back"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "video_should_loop":true,
       "steps":[
          "Stand upright with your upper arms by your sides and hands gripping the bar at your shoulder level with an underhand shoulder-width apart grip.",
@@ -15189,7 +15189,7 @@
             "is_active":true
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "notes":"If a certain bar or handle feels uncomfortable for you, you can always switch it out for another one.",
       "aggressive_overload":false,
@@ -15199,7 +15199,7 @@
    },
    {
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/26661201-Lever-Seated-Calf-Raise-plate-loaded-VERSION-2-Calves.jpg",
       "aggressive_overload":false,
       "equipment":[
@@ -15365,7 +15365,7 @@
             "female_back_media_id":"08891101-Gastrocnemius_transparent"
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "high_rep_movement":false,
       "primary_muscle_groups":[
          {
@@ -15632,12 +15632,12 @@
          }
       ],
       "female_bw_ratio":0,
-      "overloadable":false,
+      "unweighted":true,
       "name":"Chair Dip",
       "app_id":""
    },
    {
-      "overloadable":false,
+      "unweighted":true,
       "is_active":true,
       "id":"003bb523d2f04b92bfdf1891c39ddcce",
       "primary_muscle_groups":[
@@ -16204,7 +16204,7 @@
          }
       ],
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/34871201-Pull-up-with-Bent-Knee-between-Chairs-Back.mp4",
-      "overloadable":false,
+      "unweighted":true,
       "is_active":true
    },
    {
@@ -16341,7 +16341,7 @@
             "male_back_media_id":""
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "power_lift":false,
       "male_bw_ratio":0,
       "aggressive_overload":false,
@@ -16524,7 +16524,7 @@
       "rep_compatible":true,
       "high_rep_movement":false,
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "video_should_loop":true,
       "id":"0017f2ee653f47c38c392db2d16d9d86",
       "app_id":"",
@@ -16617,7 +16617,7 @@
       "historyOptional":[
          
       ],
-      "overloadable":true,
+      "unweighted":false,
       "notes":"Grip the handles further apart to emphasize your chest more, or closer together to emphasize your triceps more.",
       "primary_muscle_groups":[
          {
@@ -17054,7 +17054,7 @@
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/13271201-Close-Grip-Chin-Up-Back.jpg",
       "hiit_compatible":true,
       "name":"Chin Up",
-      "overloadable":false,
+      "unweighted":true,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/13271201-Close-Grip-Chin-Up-Back.mp4",
       "notes":"Try to tighten your abs consciously to prevent your body from swinging during this movement.",
       "male_bw_ratio":0,
@@ -17324,7 +17324,7 @@
       "media_id":"12731201-Clap-Push-Up-Plyometrics-Chest",
       "two_sided_movement":false,
       "app_id":"",
-      "overloadable":false,
+      "unweighted":true,
       "equipment":[
          {
             "is_active":true,
@@ -17555,7 +17555,7 @@
       "historyOptional":[
          
       ],
-      "overloadable":true,
+      "unweighted":false,
       "app_id":"",
       "notes":"For added resistance, you can wrap the band around the power rack or pole more than once. The band can be wrapped around any stable object if a power rack or pole is not available.",
       "is_active":true,
@@ -17808,7 +17808,7 @@
       ],
       "hiit_compatible":true,
       "aggressive_overload":false,
-      "overloadable":true
+      "unweighted":false,
    },
    {
       "male_bw_ratio":0,
@@ -18008,7 +18008,7 @@
          
       ],
       "power_lift":true,
-      "overloadable":true,
+      "unweighted":false,
       "notes":"If you want to increase the emphasis on your triceps, try tucking your elbows into your sides throughout the entire movement.",
       "id":"00033793cda74ffbb1520257f1d7f541",
       "media_id":"00551201-Barbell-Lying-Close-grip-Press-Upper-Arms",
@@ -18150,7 +18150,7 @@
       "two_sided_movement":false,
       "male_bw_ratio":0,
       "notes":"Focus on keeping your elbows tucked in, it's easy to accidentally let them rotate outwards.",
-      "overloadable":true,
+      "unweighted":false,
       "time_compatible":false,
       "hiit_compatible":true,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/17311201-Dumbbell-Close-Grip-Press-Upper-Arms.mp4",
@@ -18493,7 +18493,7 @@
       "is_active":true,
       "id":"3cd8eb7c4c5e43bba19953cda86def2c",
       "media_id":"02081201-Cable-Reverse-grip-Straight-Back-Seated-High-Row-Back",
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "app_id":"11",
       "high_rep_movement":false,
@@ -18506,7 +18506,7 @@
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/02591201-Close-Grip-Push-up-Upper-Arms.mp4",
       "pace_compatible":false,
       "rep_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "name":"Close Grip Push Up",
       "video_should_loop":true,
       "steps":[
@@ -19098,7 +19098,7 @@
       "video_should_loop":true,
       "name":"Cobra Push Up",
       "power_lift":false,
-      "overloadable":false
+      "unweighted":true,
    },
    {
       "equipment":[
@@ -19167,7 +19167,7 @@
       "is_active":true,
       "time_compatible":true,
       "rep_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "app_id":"",
       "power_lift":false,
       "muscle_groups":[
@@ -19337,7 +19337,7 @@
       ],
       "id":"002bc8c6b4e043068dace2f41eb7643b",
       "notes":"Squeeze your biceps as you curl the dumbbell upwards for added benefit.",
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/16571201-Dumbbell-Cross-Body-Hammer-Curl-Version-2-Upper-Arms.mp4",
       "hiit_compatible":true,
       "name":"Cross Body Hammer Curl",
@@ -19429,7 +19429,7 @@
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/02741201-Crunch-Floor-m-waist.mp4",
       "two_sided_movement":false,
       "aggressive_overload":false,
-      "overloadable":false,
+      "unweighted":true,
       "pace_compatible":false,
       "historyOptional":[
          
@@ -19659,7 +19659,7 @@
       "app_id":"",
       "notes":"Exhale deeply as you crunch down to further activate your abs.",
       "video_should_loop":true,
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "male_front_media_id":"08751101-Rectus-Abdominis-UPPER_transparent",
@@ -19872,7 +19872,7 @@
          "Returning to the starting position, rest the barbell on the floor for 1 second before beginning your next rep."
       ],
       "notes":"Grip the barbell tightly.",
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":false,
       "media_id":"00321201-Barbell-Deadlift-Hips",
       "pace_compatible":false,
@@ -20158,7 +20158,7 @@
          "Exhale and push the barbell upwards returning to the starting position, while keeping your feet, lower back, upper back, and head firmly planted.",
          "After completing all reps, return the barbell to the rack."
       ],
-      "overloadable":true,
+      "unweighted":false,
       "high_rep_movement":false,
       "male_bw_ratio":0,
       "female_bw_ratio":0,
@@ -20206,7 +20206,7 @@
       "pace_compatible":false,
       "video_should_loop":true,
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "male_back_media_id":"",
@@ -20375,7 +20375,7 @@
       "time_compatible":true,
       "is_active":true,
       "hiit_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "muscle_groups":[
          {
             "id":"a77bcbfcb457463a923e0ff634017570",
@@ -20726,7 +20726,7 @@
       "female_bw_ratio":0,
       "male_bw_ratio":0,
       "notes":"You can adjust the angle of the bench to change the difficulty of this movement.",
-      "overloadable":true,
+      "unweighted":false,
       "pace_compatible":false,
       "high_rep_movement":false,
       "media_id":"03011201-Dumbbell-Decline-Bench-Press-Chest"
@@ -20835,7 +20835,7 @@
          "Inhale and lower the dumbbells until you return to the starting position."
       ],
       "high_rep_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "historyOptional":[
          
@@ -21184,7 +21184,7 @@
          }
       ],
       "female_bw_ratio":0,
-      "overloadable":false,
+      "unweighted":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/34911201-Decline-Push-Up-against-Wall-Chest.jpg",
       "male_bw_ratio":0,
       "high_rep_movement":false,
@@ -21274,7 +21274,7 @@
          }
       ],
       "power_lift":false,
-      "overloadable":false,
+      "unweighted":true,
       "equipment":[
          {
             "video_url":"",
@@ -21411,7 +21411,7 @@
       "video_should_loop":true,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/02831201-Diamond-Push-up-Upper-Arms.mp4",
       "two_sided_movement":false,
-      "overloadable":false,
+      "unweighted":true,
       "id":"000cb5ca179643d5a7d9c0d573858823",
       "equipment":[
          {
@@ -21681,7 +21681,7 @@
          
       ],
       "high_rep_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false,
       "notes":"Focus on maintaining balance above all else.",
       "muscle_groups":[
@@ -21860,7 +21860,7 @@
    {
       "is_active":true,
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "steps":[
          "Lie flat on the bench so that your head, upper back, lower back, and both feet are firmly pressed against the bench and ground at all points while holding two dumbbells at shoulder level with an overhand grip.",
          "Exhale and push both of your hands up and towards each other.",
@@ -22085,7 +22085,7 @@
       "historyOptional":[
          
       ],
-      "overloadable":true,
+      "unweighted":false,
       "notes":"As you get stronger, try to jump higher.",
       "power_lift":false,
       "time_compatible":true,
@@ -22501,7 +22501,7 @@
       "high_rep_movement":true,
       "pace_compatible":false,
       "video_should_loop":true,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "image_url":"",
@@ -22640,7 +22640,7 @@
          "Inhale while continuing to keep your elbow on your thigh and lower the dumbbell, returning it to the starting position.",
          "After all reps are completed, switch sides and repeat the movement. 10 reps prescribed means you should perform 10 reps on each side (20 total)."
       ],
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "display_name":"Inner Bicep",
@@ -22911,7 +22911,7 @@
       "female_bw_ratio":0.1,
       "time_compatible":false,
       "is_active":true,
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/04161201-Dumbbell-Standing-Biceps-Curl-Upper-Arms.mp4",
       "media_id":"04161201-Dumbbell-Standing-Biceps-Curl-Upper-Arms",
       "rep_compatible":true,
@@ -23073,7 +23073,7 @@
       "historyOptional":[
          
       ],
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "female_bw_ratio":0.13,
       "hiit_compatible":true
@@ -23374,10 +23374,10 @@
       "high_rep_movement":false,
       "pace_compatible":false,
       "time_compatible":true,
-      "overloadable":true
+      "unweighted":false,
    },
    {
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "steps":[
          "Stand upright with one dumbbell in each hand and palms facing inward.",
@@ -23563,7 +23563,7 @@
       "is_active":true,
       "rep_compatible":true,
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "media_id":"03321201-Dumbbell-Iron-Cross-Shoulders",
       "equipment":[
@@ -23950,7 +23950,7 @@
       "power_lift":false,
       "notes":"Try to keep your elbows pointed forward throughout the movement for the greatest effect.",
       "time_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/04301201-Dumbbell-Standing-Triceps-Extension-Upper-Arms.jpg",
       "rep_compatible":true,
       "media_id":"04301201-Dumbbell-Standing-Triceps-Extension-Upper-Arms",
@@ -24031,7 +24031,7 @@
       "id":"0013a96a507346f79ddbea0edf7062e4",
       "is_active":true,
       "notes":"Pay careful attention to your grip on the dumbbell, it is easy to accidentally drop if you are not paying attention.",
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "male_back_media_id":"08761101-Latissimus-Dorsi_transparent",
@@ -24449,7 +24449,7 @@
       "two_sided_movement":false,
       "hiit_compatible":true,
       "name":"Dumbbell Pylo Squat",
-      "overloadable":true,
+      "unweighted":false,
       "notes":"Depending on the length of your arms, you may not be able to squat down low enough. If you can't squat until your thighs are parallel to the ground, hold the dumbbell up a little higher.",
       "primary_muscle_groups":[
          {
@@ -24546,7 +24546,7 @@
          }
       ],
       "high_rep_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":false,
       "video_should_loop":true,
       "steps":[
@@ -24679,7 +24679,7 @@
       "high_rep_movement":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/14591201-Dumbbell-Romanian-Deadlift-Hips.jpg",
       "power_lift":false,
-      "overloadable":true,
+      "unweighted":false,
       "female_bw_ratio":0,
       "primary_muscle_groups":[
          {
@@ -24961,7 +24961,7 @@
             "male_priority":300
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "media_id":"02921201-Dumbbell-Bent-over-Row-Back",
       "name":"Dumbbell Row",
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/02921201-Dumbbell-Bent-over-Row-Back.mp4",
@@ -25381,7 +25381,7 @@
             "description":"When gripping dumbbells, make sure you position your hands in the middle of the bar and not at the end next to the plates."
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "female_bw_ratio":0,
       "pace_compatible":false
    },
@@ -25576,7 +25576,7 @@
          }
       ],
       "is_active":true,
-      "overloadable":true
+      "unweighted":false,
    },
    {
       "power_lift":false,
@@ -25584,7 +25584,7 @@
       "two_sided_movement":false,
       "aggressive_overload":false,
       "is_active":true,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "technical_name":"Quadriceps",
@@ -25842,7 +25842,7 @@
       "time_compatible":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/04321201-Dumbbell-Stiff-Leg-Deadlift-Waist.jpg",
       "video_should_loop":true,
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "file_extension":".png",
@@ -26380,7 +26380,7 @@
             "female_front_media_id":"08881101-Wrist-extensors_transparent"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "high_rep_movement":false,
       "aggressive_overload":false,
       "media_id":"28081201-Dumbbell-Sumo-Pull-Through-female-Hips",
@@ -26413,7 +26413,7 @@
       ],
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/04201201-Dumbbell-Standing-Kickback-Upper-Arms.mp4",
       "media_id":"04201201-Dumbbell-Standing-Kickback-Upper-Arms",
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "partial_media_url":"https:\/\/app.fitnessai.com\/musclegroups\/partial\/",
@@ -26615,7 +26615,7 @@
             "female_priority":200
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "id":"00384f2561684947a54b9631db9785f7",
       "female_bw_ratio":0,
       "pace_compatible":false,
@@ -26797,7 +26797,7 @@
       "time_compatible":false,
       "name":"EZ Bar Concentration Curl",
       "pace_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/16821201-EZ-Bar-Seated-Close-Grip-Concentration-Curl-Upper-Arms.mp4",
       "video_should_loop":true,
       "is_active":true,
@@ -27061,7 +27061,7 @@
       "pace_compatible":false,
       "media_id":"30101201-EZ-Bar-Lying-Bent-Arms-Pullover-Back",
       "time_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "video_should_loop":true,
       "app_id":"",
       "equipment":[
@@ -27284,7 +27284,7 @@
       ],
       "is_active":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/04511201-EZ-Barbell-Reverse-Grip-Curl-Forearms.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "video_should_loop":true,
       "name":"EZ Bar Reverse Curl",
       "two_sided_movement":false,
@@ -27307,7 +27307,7 @@
       "hiit_compatible":true,
       "id":"00050f8b8b0c47029a84ac7d6e8f2427",
       "name":"EZ Bar Upright Row",
-      "overloadable":true,
+      "unweighted":false,
       "media_id":"01201201-Barbell-Upright-Row-shoulder",
       "high_rep_movement":false,
       "equipment":[
@@ -27659,7 +27659,7 @@
       ],
       "male_bw_ratio":0,
       "video_should_loop":true,
-      "overloadable":false,
+      "unweighted":true,
       "pace_compatible":false,
       "primary_muscle_groups":[
          {
@@ -27691,7 +27691,7 @@
       "time_compatible":true,
       "hiit_compatible":true,
       "power_lift":false,
-      "overloadable":false,
+      "unweighted":true,
       "rep_compatible":true,
       "name":"Elbow To Knee Sit Up",
       "app_id":"",
@@ -27819,7 +27819,7 @@
       ]
    },
    {
-      "overloadable":false,
+      "unweighted":true,
       "muscle_groups":[
          {
             "female_front_media_id":"08881101-Quadriceps_transparent",
@@ -28219,7 +28219,7 @@
          
       ],
       "female_bw_ratio":0,
-      "overloadable":false,
+      "unweighted":true,
       "notes":"If you want to increase your range of motion, start with your butt raised higher up.",
       "pace_compatible":false,
       "two_sided_movement":false,
@@ -28503,7 +28503,7 @@
       ],
       "time_compatible":true,
       "app_id":"",
-      "overloadable":false,
+      "unweighted":true,
       "male_bw_ratio":0,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/11791201-Flutter-Kicks-version-2-Hips.mp4",
       "is_active":true,
@@ -28828,7 +28828,7 @@
       "hiit_compatible":true,
       "two_sided_movement":false,
       "name":"Forearm Push Up",
-      "overloadable":false
+      "unweighted":true,
    },
    {
       "steps":[
@@ -28838,7 +28838,7 @@
          "Inhale, lowering your legs and torso to return to the starting position."
       ],
       "video_should_loop":true,
-      "overloadable":false,
+      "unweighted":true,
       "app_id":"",
       "name":"Frog Crunch",
       "male_bw_ratio":0,
@@ -29272,7 +29272,7 @@
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/29561201-Dumbbell-Goblet-Split-Squat-Front-Foot-Elevanted-Thighs.mp4",
       "male_bw_ratio":0,
       "media_id":"29561201-Dumbbell-Goblet-Split-Squat-Front-Foot-Elevanted-Thighs",
-      "overloadable":true,
+      "unweighted":false,
       "app_id":"",
       "female_bw_ratio":0,
       "pace_compatible":false,
@@ -29457,7 +29457,7 @@
       "hiit_compatible":true,
       "name":"Front Raise",
       "power_lift":false,
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "male_bw_ratio":0.091,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/03101201-Dumbbell-Front-Raise-Shoulders.mp4",
@@ -29492,7 +29492,7 @@
       ],
       "video_should_loop":true,
       "name":"Front Squat",
-      "overloadable":true,
+      "unweighted":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/00391201-Barbell-Front-Chest-Squat-Thighs.jpg",
       "pace_compatible":false,
       "aggressive_overload":false,
@@ -29834,7 +29834,7 @@
          }
       ],
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "id":"0002667ad4fe400faef1efc181d291f1",
       "is_active":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/00421201-Barbell-Front-Squat-Hips.jpg",
@@ -29900,7 +29900,7 @@
       "power_lift":false,
       "is_active":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/10311201-Lever-Standing-Hip-Extension-Hips.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "female_bw_ratio":0,
       "pace_compatible":false,
@@ -30070,7 +30070,7 @@
          }
       ],
       "video_should_loop":true,
-      "overloadable":true,
+      "unweighted":false,
       "pace_compatible":false,
       "time_compatible":false,
       "female_bw_ratio":0,
@@ -30273,7 +30273,7 @@
             "technical_name":"Wrist Extensors & Brachioradialis"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "male_bw_ratio":0.121,
       "pace_compatible":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/03121201-Dumbbell-Hammer-Curl-version-2-Upper-Arms.mp4",
@@ -30342,7 +30342,7 @@
       "high_rep_movement":false,
       "male_bw_ratio":0,
       "is_active":true,
-      "overloadable":false,
+      "unweighted":true,
       "power_lift":false,
       "primary_muscle_groups":[
          {
@@ -30641,7 +30641,7 @@
             "full_media_url":"https:\/\/app.fitnessai.com\/musclegroups\/full\/"
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "two_sided_movement":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/17611201-Hanging-Oblique-Knee-Raise-Waist.mp4",
       "high_rep_movement":false,
@@ -30908,7 +30908,7 @@
       ],
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/04741201-Hanging-Straight-Leg-Hip-Raise-Waist.jpg",
       "notes":"Inhale and lower your legs, returning to the starting position.",
-      "overloadable":false,
+      "unweighted":true,
       "time_compatible":false,
       "hiit_compatible":true,
       "two_sided_movement":false,
@@ -31194,7 +31194,7 @@
          "Switch sides."
       ],
       "aggressive_overload":false,
-      "overloadable":false,
+      "unweighted":true,
       "app_id":"",
       "pace_compatible":false,
       "time_compatible":true,
@@ -31606,7 +31606,7 @@
       ],
       "hiit_compatible":true,
       "id":"3c30ac399bea42d8af3f6b3726eb6b95",
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/40741201-band-low-chest-press-male-chest.mp4",
       "male_bw_ratio":0,
       "name":"High Band Chest Press",
@@ -31826,7 +31826,7 @@
       "rep_compatible":true,
       "female_bw_ratio":0,
       "is_active":true,
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/02271201-Cable-Standing-Fly-Chest.mp4",
       "historyOptional":[
          
@@ -31840,7 +31840,7 @@
    {
       "two_sided_movement":false,
       "video_should_loop":true,
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "name":"High Row Machine",
       "id":"0016c49d80c14507afd226fad06e31e5",
@@ -32099,7 +32099,7 @@
             "image_url":""
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "muscle_groups":[
          {
@@ -32141,7 +32141,7 @@
    },
    {
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "partial_media_url":"https:\/\/app.fitnessai.com\/musclegroups\/partial\/",
@@ -32384,7 +32384,7 @@
             "female_back_media_id":"08891101-Gluteus-Maximus_transparent"
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "notes":"Try not to use your hands to push yourself up. Only use your lower body."
    },
    {
@@ -32542,7 +32542,7 @@
       "video_should_loop":true,
       "male_bw_ratio":0,
       "hiit_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "app_id":"",
       "equipment":[
          {
@@ -32563,7 +32563,7 @@
       "video_should_loop":true,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/00491201-Barbell-Incline-Row-Back.mp4",
       "high_rep_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":true,
       "muscle_groups":[
          {
@@ -32954,7 +32954,7 @@
             "technical_name":"Sternal Head"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":true,
       "time_compatible":false,
       "app_id":"4",
@@ -33193,7 +33193,7 @@
       "media_id":"14791201-Lever-Incline-Chest-Press-Chest",
       "rep_compatible":true,
       "notes":"For best results, try to set up the machine so that your hands don't start far away from your chest or shoulders. ",
-      "overloadable":true,
+      "unweighted":false,
       "video_should_loop":true,
       "pace_compatible":false,
       "male_bw_ratio":0,
@@ -33231,7 +33231,7 @@
       "time_compatible":false,
       "pace_compatible":false,
       "video_should_loop":true,
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "media_id":"03151201-Dumbbell-Incline-Biceps-Curl-Upper-Arms",
       "notes":"Select an incline between 30º-45º and stick with it. The higher the incline, the more you'll train the long head of your biceps.",
@@ -33426,7 +33426,7 @@
          "Continue bringing your arms together until your hands are about 1 inch from each other.",
          "Inhale and lower the dumbbells until you return to the starting position."
       ],
-      "overloadable":true,
+      "unweighted":false,
       "name":"Incline Dumbbell Fly",
       "power_lift":false,
       "pace_compatible":false,
@@ -33544,7 +33544,7 @@
       "hiit_compatible":true,
       "two_sided_movement":false,
       "time_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "equipment":[
          {
             "id":"13da642b700a430bb97d80412fb81117",
@@ -33677,7 +33677,7 @@
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/03141201-Dumbbell-Incline-Bench-Press-Chest.jpg",
       "video_should_loop":true,
       "aggressive_overload":false,
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "app_id":"18",
       "equipment":[
@@ -33865,7 +33865,7 @@
    {
       "app_id":"",
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "equipment":[
          {
@@ -34179,7 +34179,7 @@
             "is_active":true
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/18451201-Decline-Bent-Leg-Reverse-Crunch-Waist.jpg"
    },
    {
@@ -34250,7 +34250,7 @@
       "historyOptional":[
          
       ],
-      "overloadable":false,
+      "unweighted":true,
       "aggressive_overload":false,
       "id":"0015466e210e4c32b0f1f680c4ecce31",
       "video_should_loop":true,
@@ -34354,7 +34354,7 @@
       "app_id":"",
       "media_id":"22991201-Inverted-Row-female-Back",
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/22991201-Inverted-Row-female-Back.jpg",
       "hiit_compatible":true,
@@ -34770,7 +34770,7 @@
          }
       ],
       "rep_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "female_bw_ratio":0,
       "video_should_loop":true,
       "power_lift":false,
@@ -34837,7 +34837,7 @@
          "Switch sides and repeat the movement."
       ],
       "two_sided_movement":false,
-      "overloadable":false,
+      "unweighted":true,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/34811201-Split-Sprinter-Low-Lunge-Thighs.mp4",
       "aggressive_overload":false,
       "rep_compatible":true,
@@ -35223,7 +35223,7 @@
       "time_compatible":true,
       "aggressive_overload":false,
       "female_bw_ratio":0,
-      "overloadable":false,
+      "unweighted":true,
       "pace_compatible":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/05141201-Jump-Squat-Thighs.mp4",
       "app_id":"",
@@ -35358,7 +35358,7 @@
       "name":"Kettlebell Angled Press",
       "id":"003a61572f1a4c749447edcda02cb8d4",
       "media_id":"29421201-Kettlebell-Angled-Press-Back",
-      "overloadable":true,
+      "unweighted":false,
       "high_rep_movement":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/29421201-Kettlebell-Angled-Press-Back.jpg",
       "time_compatible":false,
@@ -35399,7 +35399,7 @@
          }
       ],
       "power_lift":false,
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/29391201-Kettlebell-Around-Head-Rotation-Back.mp4",
       "male_bw_ratio":0,
       "female_bw_ratio":0,
@@ -35688,7 +35688,7 @@
       "is_active":true,
       "hiit_compatible":true,
       "power_lift":false,
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "male_back_media_id":"",
@@ -35941,7 +35941,7 @@
       "app_id":"",
       "pace_compatible":false,
       "time_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "power_lift":false,
       "muscle_groups":[
          {
@@ -36218,7 +36218,7 @@
          
       ],
       "male_bw_ratio":0,
-      "overloadable":true
+      "unweighted":false,
    },
    {
       "equipment":[
@@ -36279,7 +36279,7 @@
       "is_active":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/01751201-Cable-Kneeling-Crunch-Waist.jpg",
       "two_sided_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "video_should_loop":true,
       "rep_compatible":true,
       "hiit_compatible":true,
@@ -36491,7 +36491,7 @@
             "file_extension":".png"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "steps":[
          "Position yourself on your knees in front of a bench while holding a cable shoulder-width apart with an overhand grip.",
@@ -36806,7 +36806,7 @@
       "name":"Kneeling Cobra Push Up",
       "aggressive_overload":false,
       "pace_compatible":false,
-      "overloadable":false,
+      "unweighted":true,
       "male_bw_ratio":0,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/34891201-Kneeling-Cobra-Push-up-Chest.mp4",
       "historyOptional":[
@@ -36905,7 +36905,7 @@
          }
       ],
       "hiit_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "muscle_groups":[
          {
             "female_front_media_id":"08881101-Chest-UPPER_transparent",
@@ -37191,7 +37191,7 @@
       ],
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/11741201-Diamond-Push-up-on-knees-Upper-Arms.mp4",
       "high_rep_movement":false,
-      "overloadable":false,
+      "unweighted":true,
       "is_active":true,
       "rep_compatible":true,
       "hiit_compatible":true,
@@ -37587,7 +37587,7 @@
             "front_of_body":true
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "notes":"If your butt accidentally comes off the bench, you can adjust the pads or seat to make sure your thighs are secured properly.",
       "power_lift":false,
       "two_sided_movement":false,
@@ -37651,7 +37651,7 @@
             "file_extension":".png"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false,
       "high_rep_movement":false,
       "id":"0016b39357b246f2abc979391ee866dd",
@@ -37864,7 +37864,7 @@
       "aggressive_overload":false,
       "hiit_compatible":true,
       "female_bw_ratio":0.065,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "file_extension":".png",
@@ -38019,7 +38019,7 @@
       "notes":"For added benefit, adjust the machine so that your hands start closer together.",
       "male_bw_ratio":0,
       "female_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "name":"Lateral Raise Machine",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/05841201-Lever-Lateral-Raise-shoulder.jpg",
@@ -38244,7 +38244,7 @@
       "power_lift":false,
       "female_bw_ratio":0,
       "two_sided_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "pace_compatible":false
    },
@@ -38267,7 +38267,7 @@
       "is_active":true,
       "male_bw_ratio":0.727,
       "power_lift":false,
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "muscle_groups":[
          {
@@ -38465,7 +38465,7 @@
       "power_lift":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/07391201-Sled-45-Leg-Press-Hips.jpg",
       "aggressive_overload":false,
-      "overloadable":true,
+      "unweighted":false,
       "notes":"The further the machine goes, the greater the benefit. Adjust the safety mechanism accordingly.",
       "male_bw_ratio":1.121,
       "high_rep_movement":false
@@ -38559,7 +38559,7 @@
          
       ],
       "media_id":"13911201-Sled-Calf-Press-On-Leg-Press-Calves",
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false
    },
    {
@@ -38581,7 +38581,7 @@
       "historyOptional":[
          
       ],
-      "overloadable":true,
+      "unweighted":false,
       "id":"0033374f76e2408195e7a63c4f539357",
       "name":"Leg Press Machine",
       "pace_compatible":false,
@@ -38803,7 +38803,7 @@
       "aggressive_overload":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/11631201-Lying-Leg-Raise-Waist.mp4",
       "female_bw_ratio":0,
-      "overloadable":false,
+      "unweighted":true,
       "hiit_compatible":true,
       "steps":[
          "Lie supine on the floor or a mat with your legs fully extended, arms straight, and head firmly planted.",
@@ -39034,7 +39034,7 @@
             "display_name":"Lower Back"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "media_id":"14351201-Barbell-Low-Bar-Squat-Thighs",
       "name":"Low Bar Barbell Back Squat",
       "id":"002a616f4ad34933aaf84d216cdc53bf",
@@ -39063,7 +39063,7 @@
       ],
       "high_rep_movement":false,
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "app_id":"",
       "is_active":true,
       "time_compatible":false,
@@ -39191,7 +39191,7 @@
       "pace_compatible":false,
       "aggressive_overload":false,
       "video_should_loop":true,
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "female_front_media_id":"",
@@ -39408,7 +39408,7 @@
       "male_bw_ratio":0.667,
       "power_lift":false,
       "two_sided_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "notes":"For added benefit, lower your legs slowly.",
       "is_active":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/05861201-Lever-Lying-Leg-Curl-Thighs.jpg",
@@ -39467,7 +39467,7 @@
       "time_compatible":false,
       "high_rep_movement":false,
       "female_bw_ratio":0.142,
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/EZ-Barbell-Lying-Triceps-Extension-Upper-Arms.mp4",
       "hiit_compatible":true,
       "pace_compatible":false,
@@ -39570,7 +39570,7 @@
       "aggressive_overload":false,
       "two_sided_movement":false,
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "notes":"Squeeze your chest while driving your arms forward and down for added benefit.",
       "high_rep_movement":false,
       "video_should_loop":true,
@@ -39756,7 +39756,7 @@
       "is_active":true,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/15431201-Barbell-Stiff-Legged-Deadlift-Hips.mp4",
       "pace_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":false,
       "name":"Mid Shin Stiff Legged Barbell Deadlift",
       "historyOptional":[
@@ -40012,7 +40012,7 @@
       ],
       "hiit_compatible":true,
       "notes":"Try to tighten your abs to keep your legs below you, preventing them from swinging as you pull yourself up.",
-      "overloadable":false,
+      "unweighted":true,
       "male_bw_ratio":0,
       "muscle_groups":[
          {
@@ -40345,7 +40345,7 @@
             "full_media_url":"https:\/\/app.fitnessai.com\/musclegroups\/full\/"
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "name":"Narrow Squat On Book",
       "steps":[
          "Stand upright with your feet closer than shoulder-width apart, heels on a book, and hands on your hips.",
@@ -40523,7 +40523,7 @@
       "media_id":"06351201-Oblique-Crunches-Floor-waist",
       "two_sided_movement":true,
       "app_id":"1010",
-      "overloadable":false,
+      "unweighted":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/06351201-Oblique-Crunches-Floor-waist.jpg",
       "pace_compatible":false,
       "aggressive_overload":false,
@@ -40552,7 +40552,7 @@
       ],
       "video_should_loop":true,
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/06361201-Olympic-Barbell-Hammer-Curl-Forearms.jpg",
       "historyOptional":[
          
@@ -40915,7 +40915,7 @@
       ],
       "pace_compatible":false,
       "female_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "notes":"Standing farther away from where the band is tied to increase resistance. Stand closer to decreases resistance. The band can be wrapped around any stable object if a power rack or pole is not available.",
       "aggressive_overload":false,
       "id":"6378f5d40bae436b953ac113c179e4c4",
@@ -41063,7 +41063,7 @@
       "name":"One Arm Band Lateral Raise",
       "hiit_compatible":true,
       "pace_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "rep_compatible":true,
       "id":"48de1a613d9e4a549293e4d6b25cad37",
       "equipment":[
@@ -41147,7 +41147,7 @@
       "power_lift":false,
       "notes":"Try to keep your torso upright as best as you can. If you lean too far forward you will alter the mechanics of the movement.",
       "time_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "historyOptional":[
          
       ],
@@ -41298,7 +41298,7 @@
       "hiit_compatible":true
    },
    {
-      "overloadable":true,
+      "unweighted":false,
       "time_compatible":false,
       "media_id":"01911201-Cable-One-Arm-Lateral-Bent-over",
       "name":"One Arm Cable Chest Fly",
@@ -41591,7 +41591,7 @@
       "time_compatible":false,
       "rep_compatible":true,
       "two_sided_movement":true,
-      "overloadable":true,
+      "unweighted":false,
       "historyOptional":[
          
       ],
@@ -41663,7 +41663,7 @@
    },
    {
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/01611201-Cable-Forward-Raise-Shoulders.mp4",
-      "overloadable":true,
+      "unweighted":false,
       "media_id":"01611201-Cable-Forward-Raise-Shoulders",
       "primary_muscle_groups":[
          {
@@ -41844,7 +41844,7 @@
       "power_lift":false
    },
    {
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/01921201-Cable-One-Arm-Lateral-Raise-Shoulders.mp4",
       "aggressive_overload":false,
       "power_lift":false,
@@ -42029,7 +42029,7 @@
             "partial_media_url":"https:\/\/app.fitnessai.com\/musclegroups\/partial\/"
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "is_active":true,
       "high_rep_movement":false,
       "steps":[
@@ -42290,7 +42290,7 @@
       "time_compatible":false,
       "video_should_loop":true,
       "media_id":"10681201-Cable-kickback-II-Upper-Arms",
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "pace_compatible":false,
       "female_bw_ratio":0,
@@ -42525,7 +42525,7 @@
             "is_active":true
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/02311201-Cable-Standing-One-Arm-Triceps-Extension-Upper-Arms.jpg",
       "aggressive_overload":false,
       "male_bw_ratio":0,
@@ -42751,7 +42751,7 @@
          }
       ],
       "female_bw_ratio":0,
-      "overloadable":true
+      "unweighted":false,
    },
    {
       "male_bw_ratio":0,
@@ -42785,7 +42785,7 @@
       "power_lift":false,
       "is_active":true,
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":true,
       "high_rep_movement":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/03641201-Dumbbell-One-arm-Wrist-Curl-Forearm.jpg",
@@ -42875,7 +42875,7 @@
       "aggressive_overload":false,
       "is_active":true,
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "id":"002665660cc24f9d8c51c4e15a1b7b9c",
       "rep_compatible":true,
       "two_sided_movement":true,
@@ -43101,7 +43101,7 @@
       "name":"One Arm Lying Dumbbell Tricep Extension",
       "app_id":"",
       "female_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/03441201-Dumbbell-Lying-One-Arm-Pronated-Triceps-Extension-Upper-Arms.jpg",
       "time_compatible":false,
       "muscle_groups":[
@@ -43332,7 +43332,7 @@
       "aggressive_overload":false,
       "male_bw_ratio":0,
       "is_active":true,
-      "overloadable":true,
+      "unweighted":false,
       "time_compatible":false,
       "app_id":"",
       "steps":[
@@ -43505,7 +43505,7 @@
    },
    {
       "name":"One Arm Twisting Cable Floor Row",
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "power_lift":false,
       "is_active":true,
@@ -43792,7 +43792,7 @@
       "hiit_compatible":true,
       "power_lift":false,
       "notes":"Focus on consciously squeezing your biceps while raising the dumbbells for added benefit.",
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "male_front_media_id":"08751101-Biceps-SHORT_transparent",
@@ -44026,7 +44026,7 @@
       "two_sided_movement":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/18571201-Lever-Total-Abdominal-Crunch-Waist.mp4",
       "media_id":"18571201-Lever-Total-Abdominal-Crunch-Waist",
-      "overloadable":true,
+      "unweighted":false,
       "high_rep_movement":false
    },
    {
@@ -44118,7 +44118,7 @@
       ],
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/01941201-Cable-Overhead-Triceps-Extension-rope-attachment-Upper-Arms.mp4",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/01941201-Cable-Overhead-Triceps-Extension-rope-attachment-Upper-Arms.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "id":"000926d4ae5a4cb9b9519a1c132707f0",
       "high_rep_movement":false,
       "rep_compatible":true,
@@ -44257,7 +44257,7 @@
       "power_lift":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/29631201-Captains-Chair-Straight-Leg-Raise-Waist.jpg",
       "is_active":true,
-      "overloadable":false,
+      "unweighted":true,
       "historyOptional":[
          
       ],
@@ -44413,7 +44413,7 @@
       "rep_compatible":false
    },
    {
-      "overloadable":false,
+      "unweighted":true,
       "video_should_loop":true,
       "id":"00395dc8b096437cb8c38c72af858190",
       "male_bw_ratio":0,
@@ -44669,7 +44669,7 @@
       "app_id":"",
       "aggressive_overload":false,
       "time_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "video_should_loop":false,
       "historyOptional":[
          
@@ -44913,7 +44913,7 @@
          "Continue until you can no longer do so while you still keep your upper arm by your side.",
          "Inhale and lower the plate down, returning to the starting position."
       ],
-      "overloadable":true
+      "unweighted":false,
    },
    {
       "equipment":[
@@ -44967,7 +44967,7 @@
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/16271201-EZ-Barbell-Close-Grip-Preacher-Curl-Upper-Arms.mp4",
       "power_lift":false,
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":false,
       "video_should_loop":true,
       "male_bw_ratio":0,
@@ -45129,7 +45129,7 @@
       ],
       "time_compatible":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/05921201-Lever-Preacher-Curl-Upper-Arms.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "primary_muscle_groups":[
          {
@@ -45263,7 +45263,7 @@
             "front_of_body":true
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "is_active":true,
       "steps":[
          "Sit on the seat with your upper arms resting on the pad and palms facing inwards, holding one dumbbell in each hand with a neutral grip.",
@@ -45465,7 +45465,7 @@
             "video_url":""
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/00721201-Barbell-Prone-Incline-Curl-Upper-Arms.mp4",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/00721201-Barbell-Prone-Incline-Curl-Upper-Arms.jpg",
       "rep_compatible":true,
@@ -45523,7 +45523,7 @@
          "Inhale and allow yourself to lower your body down until your arms are fully extended, returning to the starting position."
       ],
       "male_bw_ratio":0,
-      "overloadable":false,
+      "unweighted":true,
       "time_compatible":false,
       "pace_compatible":false,
       "app_id":"",
@@ -45888,7 +45888,7 @@
       "app_id":"",
       "rep_compatible":true,
       "pace_compatible":false,
-      "overloadable":false,
+      "unweighted":true,
       "power_lift":false,
       "equipment":[
          {
@@ -46019,7 +46019,7 @@
             "description":"Largest portion of your chest, spanning from your sternum to your shoulder. It takes up a majority of your chest and is multiple times larger than your clavicular head."
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "steps":[
          "Position yourself prone on the ground with your legs fully extended and hands positioned at the level of your chest slightly wider than shoulder-width apart.",
          "Exhale and press yourself up by extending your arms while keeping your hips up and torso straight.",
@@ -46234,7 +46234,7 @@
       "media_id":"06721201-Reverse-Dip-Upper-Arms",
       "rep_compatible":true,
       "video_should_loop":true,
-      "overloadable":false,
+      "unweighted":true,
       "primary_muscle_groups":[
          {
             "video_url":"",
@@ -46464,7 +46464,7 @@
       ],
       "video_should_loop":true,
       "time_compatible":false,
-      "overloadable":false,
+      "unweighted":true,
       "muscle_groups":[
          {
             "technical_name":"Quadriceps",
@@ -46584,7 +46584,7 @@
       "female_bw_ratio":0,
       "aggressive_overload":false,
       "high_rep_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "time_compatible":true,
       "is_active":true,
       "primary_muscle_groups":[
@@ -47132,7 +47132,7 @@
             "id":"40e678e4ce644275baadb465eab959ef"
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "hiit_compatible":true,
       "power_lift":false,
       "id":"6f84b58a6d9542d48a7038b4c9fb8cde",
@@ -47221,7 +47221,7 @@
       "female_bw_ratio":0,
       "is_active":true,
       "notes":"To maximize benefit, start with the handle grips as close together as you can without experiencing discomfort in your shoulders. If the machine at your gym as set up for performing a regular chest fly, you can usually adjust the starting position of the handles to set yourself up for a reverse fly instead.",
-      "overloadable":true,
+      "unweighted":false,
       "name":"Reverse Fly Machine With Overhand Grip",
       "male_bw_ratio":0,
       "primary_muscle_groups":[
@@ -47393,7 +47393,7 @@
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/06011201-Lever-Seated-Reverse-Fly-parallel-grip-shoulder.jpg",
       "is_active":true,
       "pace_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "historyOptional":[
          
       ],
@@ -47495,7 +47495,7 @@
       "female_bw_ratio":0,
       "male_bw_ratio":0,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/14231201-Reverse-Hyper-on-Flat-Bench-Hips.jpg",
-      "overloadable":false,
+      "unweighted":true,
       "power_lift":false,
       "primary_muscle_groups":[
          {
@@ -47619,7 +47619,7 @@
       "male_bw_ratio":0,
       "aggressive_overload":false,
       "video_should_loop":true,
-      "overloadable":false,
+      "unweighted":true,
       "time_compatible":true,
       "muscle_groups":[
          {
@@ -47713,7 +47713,7 @@
    {
       "name":"Reverse Push Up On Chair",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/17721201-Elbow-Lift---Reverse-Push-Up-Back.jpg",
-      "overloadable":false,
+      "unweighted":true,
       "pace_compatible":false,
       "hiit_compatible":true,
       "rep_compatible":true,
@@ -47872,7 +47872,7 @@
    },
    {
       "time_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "name":"Rope Crunch",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/26741201-Cable-Standing-Crunch-with-rope-attachment-female-waist.jpg",
       "notes":"Exhale very deeply while crunching down to maximize the benefits of this movement.",
@@ -48038,7 +48038,7 @@
       ],
       "male_bw_ratio":0.121,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/02001201-Cable-Pushdown-with-rope-attachment-Upper-Arms.mp4",
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":false,
       "primary_muscle_groups":[
          {
@@ -48390,7 +48390,7 @@
       "media_id":"02031201-Cable-Rear-Delt-Row-with-rope-Shoulders",
       "notes":"If you have the flexibility to do so, you can bring the rope back even further until the point that your upper arms pass behind your torso.",
       "two_sided_movement":false,
-      "overloadable":true
+      "unweighted":false,
    },
    {
       "media_id":"11611201-Rowing-with-rowing-machine-Cardio",
@@ -48732,7 +48732,7 @@
       "time_compatible":true,
       "id":"002340516c054f0a950e8113435ef84e",
       "high_rep_movement":false,
-      "overloadable":false
+      "unweighted":true,
    },
    {
       "two_sided_movement":false,
@@ -48760,7 +48760,7 @@
          }
       ],
       "time_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false,
       "muscle_groups":[
          {
@@ -48916,7 +48916,7 @@
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/03971201-Dumbbell-Seated-Neutral-Wrist-Curl-Forearms.jpg",
       "two_sided_movement":false,
       "name":"Seated Hammer Wrist Curl",
-      "overloadable":true,
+      "unweighted":false,
       "is_active":true,
       "female_bw_ratio":0,
       "muscle_groups":[
@@ -49002,7 +49002,7 @@
       "media_id":"23171201-Dumbbell-Seated-Bent-Arm-Lateral-raise-Shoulders",
       "pace_compatible":false,
       "two_sided_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "muscle_groups":[
          {
@@ -49173,7 +49173,7 @@
       "time_compatible":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/05991201-Lever-Seated-Leg-Curl-Thighs.mp4",
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "description":"Muscles spanning the back of your thigh.",
@@ -49338,7 +49338,7 @@
       "media_id":"03781201-Dumbbell-Rear-Fly-Shoulders",
       "pace_compatible":false,
       "hiit_compatible":true,
-      "overloadable":true
+      "unweighted":false,
    },
    {
       "hiit_compatible":true,
@@ -49377,7 +49377,7 @@
             "activation_percent":1
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/22651201-Lever-Seated-Row-version-2-Back.jpg",
       "male_bw_ratio":0,
       "muscle_groups":[
@@ -49692,7 +49692,7 @@
          "Continue pushing the handles overhead until your arms are fully extended.",
          "Inhale and allow your arms to flex, lowering the handles down, returning to the starting position."
       ],
-      "overloadable":true,
+      "unweighted":false,
       "equipment":[
          {
             "video_url":"",
@@ -49774,7 +49774,7 @@
          }
       ],
       "video_should_loop":true,
-      "overloadable":false,
+      "unweighted":true,
       "high_rep_movement":false,
       "id":"001c42c607b54e22a1ccddbc6d8762c6",
       "hiit_compatible":true,
@@ -50143,7 +50143,7 @@
             "front_of_body":true
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/00951201-Barbell-Shrug-Back.mp4",
       "steps":[
          "Stand upright, holding the barbell slightly wider than shoulder-width apart with an overhand grip.",
@@ -50183,7 +50183,7 @@
          }
       ],
       "male_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "notes":"Try not to pull on your head with your hand because it can lead to neck discomfort down the line.",
       "app_id":"1011",
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/04071201-Dumbbell-Side-Bend-Waist.mp4",
@@ -50331,7 +50331,7 @@
       "rep_compatible":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/07151201-Side-Plank-m-Waist.mp4",
       "app_id":"",
-      "overloadable":false,
+      "unweighted":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/07151201-Side-Plank-m-Waist.jpg",
       "video_should_loop":false,
       "pace_compatible":false,
@@ -50521,7 +50521,7 @@
       ],
       "two_sided_movement":true,
       "hiit_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "media_id":"17751201-Side-Plank-Hip-Adduction-Hips",
       "female_bw_ratio":0,
       "video_should_loop":false,
@@ -50761,7 +50761,7 @@
       "video_should_loop":true,
       "id":"0041610b1f384430ab4a6a46ba0a9666",
       "notes":"If you cannot squat low enough, start with a higher box, and gradually work your way down to a smaller one.",
-      "overloadable":false,
+      "unweighted":true,
       "app_id":"",
       "hiit_compatible":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/34931201-Single-Leg-Low-Box-Squat-Thighs.jpg",
@@ -51060,7 +51060,7 @@
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/17571201-Dumbbell-Single-Leg-Deadlift-Hips.jpg",
       "app_id":"",
       "video_should_loop":true,
-      "overloadable":true
+      "unweighted":false,
    },
    {
       "muscle_groups":[
@@ -51172,7 +51172,7 @@
       ],
       "name":"Single Leg Heel Touch Squat",
       "video_should_loop":true,
-      "overloadable":false,
+      "unweighted":true,
       "app_id":"",
       "is_active":true,
       "id":"0041fb4d2149467890a6c575a1e283f3",
@@ -51426,7 +51426,7 @@
          }
       ],
       "hiit_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "pace_compatible":false,
       "primary_muscle_groups":[
          {
@@ -51629,7 +51629,7 @@
       "female_bw_ratio":0,
       "video_should_loop":true,
       "notes":"If you have the strength and flexibility, you can squat down farther and stop when your thigh is parallel to the ground.",
-      "overloadable":false,
+      "unweighted":true,
       "power_lift":false,
       "primary_muscle_groups":[
          {
@@ -51776,7 +51776,7 @@
          "Continue raising yourself up until you can no longer do so while still keeping your feet and butt firmly planted on the ground.",
          "Inhale and lower your torso back down, returning to the starting position."
       ],
-      "overloadable":false,
+      "unweighted":true,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/24761201-3-4-Sit-up-female-Waist.mp4",
       "time_compatible":true,
       "male_bw_ratio":0,
@@ -51820,7 +51820,7 @@
       ],
       "time_compatible":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/25241201-Power-Sled-Push-female-Thighs.mp4",
-      "overloadable":true,
+      "unweighted":false,
       "name":"Sled Push",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/25241201-Power-Sled-Push-female-Thighs.jpg",
       "is_active":true,
@@ -52228,7 +52228,7 @@
       "historyOptional":[
          
       ],
-      "overloadable":false,
+      "unweighted":true,
       "is_active":true,
       "primary_muscle_groups":[
          {
@@ -52577,7 +52577,7 @@
       "high_rep_movement":false,
       "notes":"If you do not have access to a slider, you can substitute it for another object that rolls, like a foam roller, and place it under the middle of your shin.",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/34971201-Sliding-Floor-Pulldown-on-Towel-Back.jpg",
-      "overloadable":false,
+      "unweighted":true,
       "steps":[
          "Position yourself on the ground with your legs bent, knees on a slider, and arms outstretched ahead of you slightly wider than shoulder-width apart.",
          "Exhale and pull your body forward by pulling through your hands and raising your torso up slightly, making sure to keep your arms straight.",
@@ -52810,7 +52810,7 @@
       ],
       "female_bw_ratio":0,
       "time_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/07481201-Smith-Bench-Press-Chest.mp4",
       "notes":"If you experience shoulder discomfort, try tucking your elbows in a little more.",
       "name":"Smith Machine Bench Press",
@@ -52843,7 +52843,7 @@
       ],
       "two_sided_movement":false,
       "hiit_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false,
       "is_active":true,
       "historyOptional":[
@@ -53043,7 +53043,7 @@
       ],
       "female_bw_ratio":0,
       "power_lift":false,
-      "overloadable":true,
+      "unweighted":false,
       "media_id":"16831201-Smith-Machine-Bicep-Curl-Upper-Arms",
       "name":"Smith Machine Curl",
       "male_bw_ratio":0
@@ -53180,7 +53180,7 @@
          }
       ],
       "media_id":"07571201-Smith-Incline-Bench-Press-Chest",
-      "overloadable":true,
+      "unweighted":false,
       "male_bw_ratio":0,
       "equipment":[
          {
@@ -53450,7 +53450,7 @@
       ],
       "male_bw_ratio":0,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/07651201-Smith-Seated-Shoulder-Press-Shoulders.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "power_lift":false,
       "primary_muscle_groups":[
          {
@@ -53578,7 +53578,7 @@
       "notes":"Try to lower the bar slowly for greater benefit.",
       "aggressive_overload":false,
       "female_bw_ratio":0,
-      "overloadable":true,
+      "unweighted":false,
       "two_sided_movement":false,
       "historyOptional":[
          
@@ -53631,7 +53631,7 @@
       "rep_compatible":true,
       "video_should_loop":true,
       "notes":"The higher you jump, the more effective the movement will be.",
-      "overloadable":false,
+      "unweighted":true,
       "app_id":"",
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/superHIIT1.mp4",
       "power_lift":false,
@@ -54149,7 +54149,7 @@
          
       ],
       "notes":"Remember to breathe rhythmically throughout the duration of this movement.",
-      "overloadable":false,
+      "unweighted":true,
       "name":"Spin Bike",
       "aggressive_overload":false,
       "video_should_loop":true,
@@ -54286,7 +54286,7 @@
       "rep_compatible":true,
       "female_bw_ratio":0,
       "hiit_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "primary_muscle_groups":[
          {
             "activation_percent":1,
@@ -54524,7 +54524,7 @@
       "video_should_loop":true,
       "rep_compatible":true,
       "female_bw_ratio":0.54,
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false,
       "is_active":true,
       "historyOptional":[
@@ -54637,7 +54637,7 @@
       "two_sided_movement":true,
       "app_id":"",
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/00931201-Barbell-Seated-Twist-on-stability-ball-Waist.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "aggressive_overload":false,
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/00931201-Barbell-Seated-Twist-on-stability-ball-Waist.mp4",
       "pace_compatible":false,
@@ -54717,7 +54717,7 @@
       "power_lift":false,
       "pace_compatible":false,
       "female_bw_ratio":0,
-      "overloadable":false,
+      "unweighted":true,
       "aggressive_overload":false,
       "equipment":[
          {
@@ -55001,7 +55001,7 @@
       ],
       "name":"Stability Ball Leg Curl",
       "time_compatible":false,
-      "overloadable":false,
+      "unweighted":true,
       "media_id":"05691201-Leg-Curl-on-stability-ball-Thighs",
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/05691201-Leg-Curl-on-stability-ball-Thighs.mp4",
       "pace_compatible":false,
@@ -55015,7 +55015,7 @@
       "id":"003592ff9da04041b9a12d8be0efcc8c",
       "female_bw_ratio":0,
       "app_id":"",
-      "overloadable":false,
+      "unweighted":true,
       "power_lift":false,
       "male_bw_ratio":0,
       "equipment":[
@@ -55389,7 +55389,7 @@
          
       ],
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/00211201-Ball-Sit-up-on-stability-ball-waist.jpg",
-      "overloadable":false
+      "unweighted":true,
    },
    {
       "male_bw_ratio":0,
@@ -55507,7 +55507,7 @@
          
       ],
       "notes":"Even though you raise your head up with your arm in this movement, try not to bend at your neck, keep your head straight while raising it.",
-      "overloadable":false,
+      "unweighted":true,
       "name":"Starfish Crunch",
       "steps":[
          "Lie supine on the floor with your arms and legs fully extended and pointed outward in a jumping jack position.",
@@ -55699,7 +55699,7 @@
             "full_media_url":"https:\/\/app.fitnessai.com\/musclegroups\/full\/"
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "aggressive_overload":false,
       "pace_compatible":true,
       "is_active":true,
@@ -55806,7 +55806,7 @@
       ],
       "pace_compatible":false,
       "two_sided_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "equipment":[
          {
             "description":"Make sure to always use weight clips whenever you use a barbell, to prevent the plates from sliding off.",
@@ -56199,7 +56199,7 @@
             "id":"9c59a33524dd4b1b8a66ab2cb094d3a7"
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "pace_compatible":false,
       "power_lift":false,
       "notes":"If you want to make this movement easier, keep your hands angled diagonally up and back so that they are not directly overhead.",
@@ -56333,7 +56333,7 @@
       ],
       "female_bw_ratio":0,
       "time_compatible":true,
-      "overloadable":false,
+      "unweighted":true,
       "high_rep_movement":false,
       "video_should_loop":true,
       "rep_compatible":true,
@@ -56446,7 +56446,7 @@
       "time_compatible":true,
       "app_id":"",
       "name":"Straight Leg Raise Hold",
-      "overloadable":false,
+      "unweighted":true,
       "equipment":[
          {
             "video_url":"",
@@ -56495,7 +56495,7 @@
    {
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/33931201-Lying-Leg-Hip-Raise-on-Floor-Waist.jpg",
       "aggressive_overload":false,
-      "overloadable":false,
+      "unweighted":true,
       "hiit_compatible":true,
       "video_should_loop":true,
       "app_id":"",
@@ -56786,7 +56786,7 @@
       "aggressive_overload":false,
       "two_sided_movement":false,
       "time_compatible":false,
-      "overloadable":false,
+      "unweighted":true,
       "steps":[
          "Lie supine on a bench with your legs fully extended and hands behind your head gripping the bench for support.",
          "Exhale and raise your legs up toward your chest while simultaneously bending them and keeping the rest of your body firmly planted on the bench.",
@@ -56804,7 +56804,7 @@
       "pace_compatible":false
    },
    {
-      "overloadable":false,
+      "unweighted":true,
       "rep_compatible":true,
       "app_id":"",
       "male_bw_ratio":0,
@@ -57000,7 +57000,7 @@
          }
       ],
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/08021201-Sumo-Squat-Thighs.mp4",
-      "overloadable":false,
+      "unweighted":true,
       "hiit_compatible":true,
       "muscle_groups":[
          {
@@ -57266,7 +57266,7 @@
       "video_should_loop":true,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/08031201-Superman-Push-up-Chest.jpg",
       "high_rep_movement":false,
-      "overloadable":false,
+      "unweighted":true,
       "female_bw_ratio":0,
       "male_bw_ratio":0,
       "time_compatible":true,
@@ -57354,7 +57354,7 @@
       "time_compatible":false,
       "aggressive_overload":false,
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "female_back_media_id":"08891101-Latissimus-Dors_transparent",
@@ -57758,7 +57758,7 @@
       "name":"T-Bar Row Machine",
       "male_bw_ratio":0,
       "is_active":true,
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "female_priority":100,
@@ -57946,7 +57946,7 @@
       "male_bw_ratio":0,
       "power_lift":false,
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/21981201-Lever-Triceps-Extension-VERSION-2-Upper-Arms.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "is_active":true
    },
    {
@@ -58193,7 +58193,7 @@
             "video_url":""
          }
       ],
-      "overloadable":false,
+      "unweighted":true,
       "female_bw_ratio":0,
       "hiit_compatible":true,
       "pace_compatible":false,
@@ -58393,7 +58393,7 @@
       "video_url":"https:\/\/app.fitnessai.com\/exercises\/02131201-Cable-Seated-High-Row-V-bar-Back.mp4",
       "aggressive_overload":false,
       "rep_compatible":true,
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "male_back_media_id":"08761101-Latissimus-Dorsi_transparent",
@@ -58461,7 +58461,7 @@
             "front_of_body":true
          }
       ],
-      "overloadable":true,
+      "unweighted":false,
       "high_rep_movement":false,
       "is_active":true,
       "steps":[
@@ -58626,7 +58626,7 @@
          }
       ],
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/08661201-Weighted-Hanging-leg-hip-raise-Waist.jpg",
-      "overloadable":true,
+      "unweighted":false,
       "female_bw_ratio":0,
       "two_sided_movement":false,
       "is_active":true,
@@ -58832,7 +58832,7 @@
    },
    {
       "two_sided_movement":false,
-      "overloadable":true,
+      "unweighted":false,
       "muscle_groups":[
          {
             "male_priority":100,
@@ -59095,7 +59095,7 @@
       "hiit_compatible":false,
       "notes":"If you experience shoulder discomfort, bring your hands slightly closer together and tuck your elbows in slightly throughout the movement.",
       "power_lift":true,
-      "overloadable":true,
+      "unweighted":false,
       "video_should_loop":true,
       "pace_compatible":false,
       "app_id":"",
@@ -59358,7 +59358,7 @@
          }
       ],
       "pace_compatible":false,
-      "overloadable":true,
+      "unweighted":false,
       "primary_muscle_groups":[
          {
             "group":"Biceps",
@@ -59464,7 +59464,7 @@
       "time_compatible":false,
       "two_sided_movement":false,
       "is_active":true,
-      "overloadable":true,
+      "unweighted":false,
       "steps":[
          "Stand upright with your feet shoulder-width apart and holding the barbell with an overhand grip much wider than shoulder-width apart.",
          "Exhale and raise the barbell upward by shrugging at your shoulders and driving your elbows upwards.",
@@ -59800,7 +59800,7 @@
          "Exhale and raise your legs back towards the middle of your body, returning to the starting position.",
          "Switch sides."
       ],
-      "overloadable":false,
+      "unweighted":true,
       "equipment":[
          {
             "name":"Bodyweight Only",
@@ -59819,7 +59819,7 @@
    {
       "image_url":"https:\/\/app.fitnessai.com\/exercises\/04391201-Dumbbell-Zottman-Curl-Upper-Arms-FIX.jpg",
       "is_active":true,
-      "overloadable":true,
+      "unweighted":false,
       "female_bw_ratio":0,
       "pace_compatible":false,
       "hiit_compatible":true,
@@ -60141,7 +60141,7 @@
          }
       ],
       "notes":"If the pad gets in the way of you lifting the dumbbells, you can adjust the seat height to help you position your body so that the dumbbells can move more freely.",
-      "overloadable":true,
+      "unweighted":false,
       "hiit_compatible":true,
       "historyOptional":[
          

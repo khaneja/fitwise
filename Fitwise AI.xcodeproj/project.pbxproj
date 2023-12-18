@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E2E3BBA2B309FEA005EDC4A /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2E3BB92B309FEA005EDC4A /* WorkoutView.swift */; };
+		3E45CBA32B2DF82C00CFB57D /* WorkoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45CBA22B2DF82C00CFB57D /* WorkoutModel.swift */; };
+		3E45CBA72B2E1D8E00CFB57D /* WorkoutExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45CBA62B2E1D8E00CFB57D /* WorkoutExerciseModel.swift */; };
+		3E45CBA92B2E1E5000CFB57D /* WorkoutSetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45CBA82B2E1E5000CFB57D /* WorkoutSetModel.swift */; };
+		3E45CBAD2B2E2D8400CFB57D /* WorkoutViewOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45CBAC2B2E2D8400CFB57D /* WorkoutViewOld.swift */; };
 		3EA2ECAA2B2B1B760040F62F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA2ECA92B2B1B760040F62F /* HomeViewModel.swift */; };
 		3ED8544E2B2A4117007C0B3D /* Fitwise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED8544D2B2A4117007C0B3D /* Fitwise.swift */; };
 		3ED854522B2A4117007C0B3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ED854512B2A4117007C0B3D /* Assets.xcassets */; };
@@ -29,13 +34,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E2E3BB92B309FEA005EDC4A /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		3E45CBA22B2DF82C00CFB57D /* WorkoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutModel.swift; sourceTree = "<group>"; };
+		3E45CBA62B2E1D8E00CFB57D /* WorkoutExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutExerciseModel.swift; sourceTree = "<group>"; };
+		3E45CBA82B2E1E5000CFB57D /* WorkoutSetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSetModel.swift; sourceTree = "<group>"; };
+		3E45CBAC2B2E2D8400CFB57D /* WorkoutViewOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewOld.swift; sourceTree = "<group>"; };
 		3EA2ECA92B2B1B760040F62F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3ED8544A2B2A4117007C0B3D /* Fitwise AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitwise AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ED8544D2B2A4117007C0B3D /* Fitwise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitwise.swift; sourceTree = "<group>"; };
 		3ED854512B2A4117007C0B3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3ED854542B2A4117007C0B3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3ED8545C2B2A419B007C0B3D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		3ED8545D2B2A419B007C0B3D /* EntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		3ED8545D2B2A419B007C0B3D /* EntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EntryView.swift; path = ../EntryView.swift; sourceTree = "<group>"; };
 		3ED8545E2B2A419B007C0B3D /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		3ED854642B2A41DF007C0B3D /* ExerciseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
 		3ED854652B2A41DF007C0B3D /* SupportingModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportingModels.swift; sourceTree = "<group>"; };
@@ -62,6 +72,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E45CBA52B2E1D7B00CFB57D /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				3E45CBA22B2DF82C00CFB57D /* WorkoutModel.swift */,
+				3E45CBA62B2E1D8E00CFB57D /* WorkoutExerciseModel.swift */,
+				3E45CBA82B2E1E5000CFB57D /* WorkoutSetModel.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
 		3ED854412B2A4116007C0B3D = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				3ED8544D2B2A4117007C0B3D /* Fitwise.swift */,
-				3ED8545D2B2A419B007C0B3D /* EntryView.swift */,
 				3ED854622B2A41DF007C0B3D /* Models */,
 				3ED8546F2B2A41DF007C0B3D /* ViewModels */,
 				3ED8545B2B2A419B007C0B3D /* Views */,
@@ -105,8 +124,10 @@
 		3ED8545B2B2A419B007C0B3D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3ED8545D2B2A419B007C0B3D /* EntryView.swift */,
 				3ED8545E2B2A419B007C0B3D /* OnboardingView.swift */,
 				3ED8545C2B2A419B007C0B3D /* HomeView.swift */,
+				3E2E3BB92B309FEA005EDC4A /* WorkoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +138,7 @@
 				3ED854662B2A41DF007C0B3D /* UserModel.swift */,
 				3ED854672B2A41DF007C0B3D /* RoutineDayModel.swift */,
 				3ED854632B2A41DF007C0B3D /* Exercise */,
+				3E45CBA52B2E1D7B00CFB57D /* Workout */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -144,6 +166,7 @@
 		3ED8546D2B2A41DF007C0B3D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3E45CBAC2B2E2D8400CFB57D /* WorkoutViewOld.swift */,
 				3ED8546E2B2A41DF007C0B3D /* Binding+Extension.swift */,
 			);
 			path = Extensions;
@@ -236,8 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E45CBA72B2E1D8E00CFB57D /* WorkoutExerciseModel.swift in Sources */,
 				3ED8545F2B2A419B007C0B3D /* HomeView.swift in Sources */,
+				3E45CBA32B2DF82C00CFB57D /* WorkoutModel.swift in Sources */,
 				3ED854792B2A41DF007C0B3D /* Binding+Extension.swift in Sources */,
+				3E2E3BBA2B309FEA005EDC4A /* WorkoutView.swift in Sources */,
+				3E45CBAD2B2E2D8400CFB57D /* WorkoutViewOld.swift in Sources */,
 				3ED854732B2A41DF007C0B3D /* UserModel.swift in Sources */,
 				3ED8544E2B2A4117007C0B3D /* Fitwise.swift in Sources */,
 				3ED854782B2A41DF007C0B3D /* Migrator.swift in Sources */,
@@ -246,6 +273,7 @@
 				3ED854762B2A41DF007C0B3D /* RoutineManager.swift in Sources */,
 				3ED854752B2A41DF007C0B3D /* Decoder.swift in Sources */,
 				3EA2ECAA2B2B1B760040F62F /* HomeViewModel.swift in Sources */,
+				3E45CBA92B2E1E5000CFB57D /* WorkoutSetModel.swift in Sources */,
 				3ED854612B2A419B007C0B3D /* OnboardingView.swift in Sources */,
 				3ED854742B2A41DF007C0B3D /* RoutineDayModel.swift in Sources */,
 				3ED854602B2A419B007C0B3D /* EntryView.swift in Sources */,
@@ -392,6 +420,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,6 +454,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

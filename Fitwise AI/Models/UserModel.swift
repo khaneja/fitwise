@@ -20,8 +20,9 @@ class UserModel: Object, ObjectKeyIdentifiable {
     @Persisted var workoutDuration: UserWorkoutDurationEnum
     @Persisted var _workoutDays = List<Int>()
     @Persisted var isUserOnboarded: Bool = false
-
-    convenience init(name: String, gender: UserGenderEnum, workoutFrequency: UserWorkoutFrequencyEnum, goal: UserGoalEnum, bodyType: UserBodyTypeEnum, experience: UserExperienceEnum, workoutDuration: UserWorkoutDurationEnum, workoutDays: [UserWorkoutDayEnum]) {
+    @Persisted var weight: Double
+    
+    convenience init(name: String, gender: UserGenderEnum, workoutFrequency: UserWorkoutFrequencyEnum, goal: UserGoalEnum, bodyType: UserBodyTypeEnum, weight: Double, experience: UserExperienceEnum, workoutDuration: UserWorkoutDurationEnum, workoutDays: [UserWorkoutDayEnum]) {
         self.init()
         self.name = name
         self.gender = gender
@@ -30,6 +31,7 @@ class UserModel: Object, ObjectKeyIdentifiable {
         self.bodyType = bodyType
         self.experience = experience
         self.workoutDuration = workoutDuration
+        self.weight = weight
         self.workoutDays = workoutDays
     }
 }
