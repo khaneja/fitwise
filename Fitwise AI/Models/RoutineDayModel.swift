@@ -52,7 +52,7 @@ enum MuscleGroupEnum: Int, PersistableEnum {
         case .forearm: return "Forearm"
         }
     }
-    
+}
 //    enum MuscleGroupsCategoryEnum {
 //        case abs, arms, legs, back, chest, shoulders, glutes, cardio, bodyweight
 //    }
@@ -79,5 +79,5 @@ enum MuscleGroupEnum: Int, PersistableEnum {
 //            return [.bodyweight]
 //        }
 //    }
-}
+
 
