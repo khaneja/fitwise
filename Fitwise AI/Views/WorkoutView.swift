@@ -51,7 +51,7 @@ struct WorkoutView: View {
         ScrollView {
             VStack(alignment: .leading) {
 
-                    let exercises = hvm.getExercises(.back)
+                    let exercises = hvm.getExercises(.back, 8)
 
                     ForEach(exercises) { exercise in
                         Text(exercise.name)

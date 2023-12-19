@@ -40,7 +40,7 @@ class HomeViewModel: ObservableObject {
     }
 
     
-    func getExercises(_ muscleGroup: MuscleGroupEnum) -> [ExerciseViewDataModel] {
+    func getExercises(_ muscleGroup: MuscleGroupEnum, _ totalSets: Int) -> [ExerciseViewDataModel] {
         
         var exercises: [ExerciseViewDataModel] = []
         var setIndex = 1
@@ -48,20 +48,19 @@ class HomeViewModel: ObservableObject {
         let filteredExercises = exerciseModel
             .filter("ANY primaryMuscleGroups.group = '\(muscleGroup.text)'")
             .sorted(byKeyPath: "\(getGender()!)BwRatio", ascending: false)
-            .prefix(10)
+            .prefix(3)
         
         //TODO: Exercises with the highest BwRatio have very a high RSM & one can train them very hard. But it isn't smart to only return exercises with the highest BwRatio anytime getExercises() is called. Furthermore, if you're just going to rely on the same 3 exercises every single week - at some point, they are going to get stale, which means if the app algorithm doesn't switch them out, the progress is going to plateau hard. If the algorithm switches them out, the only option is to trade them with exercises with a lower RSM, because you picked the best ones first. So if the user needs 3 exercies, pick 2 with high BwRatio and 1 with low.
         
         //TODO: UserWeight, genderBwRatip, set count, rep count are hard coded.
         
         filteredExercises.forEach {
-            print("\($0.name) @ \($0.maleBwRatio)")
-            let numberOfSets = self.calcuateSets($0)
+            let numberOfSets = 3
             var sets: [ExerciseSet] = []
             
             for _ in 1...numberOfSets {
                 //TODO: What about warmup sets? Are we not doing those for every muscle group every workout?
-                sets.append(ExerciseSet(targetWeight: calculateTargetWeight($0), targetReps: 10))
+                sets.append(ExerciseSet(targetWeight: calculateTargetWeight($0), targetReps: calculateReps($0)))
             }
             exercises.append(ExerciseViewDataModel(name: $0.name, sets: sets))
         }
@@ -69,16 +68,61 @@ class HomeViewModel: ObservableObject {
         return exercises
     }
     
-    
+    func main() {
+        
+        //TODO: THIS FUNC IS WRITTEN ASSUMING THE USER IS A BEGINNER
+        let setsPerSessionRange = 16...24
+        let routineDays = generateRoutine()
+        let totalTrainingDays = routineDays.count
+        let SPW = (setsPerSessionRange.lowerBound * totalTrainingDays)
+        //TODO: HARD DIVIDE BY 7. WHAT IF THE USER DOESN'T WANNA TRAIN ABS?
+        let totalMuscleGroups = 7.0
+        let SPMG: Double = (Double(SPW) / Double(totalMuscleGroups)).rounded()
+        
+        print("Running main func! Total training days are \(totalTrainingDays). The optimimum set range is \(setsPerSessionRange) but we're taking \(setsPerSessionRange.lowerBound) as the input and assuming the user is a beginner and they want to work out all \(totalMuscleGroups) muscle groups. Calculated SPW is \(SPW) and SPMG is \(SPMG).")
+//        routineDays.forEach {
+//            $0.muscleGroup.forEach {
+//                
+//            }
+//        }
+    }
+    func splitSets(_ totalSets: Int) -> [Int] {
+        //https://chat.openai.com/c/fb94309e-9572-4abd-98e9-d8da49ce3949
+        var setsDistribution: [Int] = []
+        var remainingSets = totalSets
+        //Here, we declare two variables: setsDistribution will store the result (the distribution of sets among exercises), and remainingSets initially holds the total number of sets.
+        
+        while remainingSets > 0 {
+            //This is a while loop that continues executing as long as there are remaining sets to distribute (remainingSets > 0).
+            if remainingSets >= 4 {
+                setsDistribution.append(4)
+                remainingSets -= 4
+            } else {
+                setsDistribution.append(3)
+                remainingSets -= 3
+            }
+            //Inside the loop, it checks whether there are at least 4 sets remaining. If true, it adds a set of size 4 to the distribution and subtracts 4 from remainingSets. If not, it adds a set of size 3 and subtracts 3 from remainingSets.
+        }
+        
+        return setsDistribution
+    }
+
     func calculateReps(_ exercise: Slice<Results<ExerciseModel>>.Element) -> Int {
-        // anything between 5-30 reps in a set close to failure is aboslutely effective for muslce growth
-        return 10
+        // anything between 5-30 reps in a set taken close to failure is aboslutely effective for muscle growth
+        if exercise.highRepMovement {
+            return 14
+        } else if exercise.powerLift {
+            return 8
+        } else {
+            return 10
+        }
     }
     
-    
-    func calcuateSets(_ exercise: Slice<Results<ExerciseModel>>.Element) -> Int {
-        return 3
-    }
+        //TODO: THIS FUNC BELOW
+//    func calcuateSets() -> Int {
+//        let target = userModel.last?.workoutFrequency
+//        
+//    }
     
     func calculateTargetWeight(_ exercise: Slice<Results<ExerciseModel>>.Element) -> Double? {
         

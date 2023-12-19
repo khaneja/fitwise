@@ -37,7 +37,7 @@ struct HomeView: View {
                                     .fontWeight(.semibold)
                                 
                                 if day.dayIndex == currentDay {
-                                    let exercises = hvm.getExercises(muscleGroup)
+                                    let exercises = hvm.getExercises(muscleGroup, 8)
                                     
                                     ForEach(exercises) { exercise in
                                         Text("\(exercise.name)")
@@ -55,6 +55,9 @@ struct HomeView: View {
                 }
                 .listStyle(.grouped)
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .onAppear {
+                   hvm.main()
+                }
             }
             .navigationTitle("Fitwise")
             .navigationBarTitleDisplayMode(.inline)

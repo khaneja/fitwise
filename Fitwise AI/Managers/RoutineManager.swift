@@ -19,6 +19,7 @@ func generateRoutine() -> [RoutineDay] {
     //TODO: Why on earth RoutineDay is a Realm Model like WorkoutModel is and not a simple struct? We're not saving it to Realm are we?
     //TODO: Name for each of the days so they can be forwarded to WorkoutModel as the name value (name of the workout you start eg: "Evening Workout" or "Push Workout #1"
     //TODO: (!) These are just pre-programmed workouts. What if the user wants to creat their own split?
+    //TODO: (!) Right now, it's throwing every muscle into the mix, be it abs, back and whatnot. What if the user doesn't want to train abs?
     
     switch target {
     case 2:
@@ -44,7 +45,7 @@ func generateRoutine() -> [RoutineDay] {
         let day1 = RoutineDay(dayIndex: 1, muscleGroup: [.chest, .shoulders, .triceps, .abs])
         let day2 = RoutineDay(dayIndex: 2, muscleGroup: [.back, .biceps, .abs])
         let day3 = RoutineDay(dayIndex: 3, muscleGroup: [.legs, .abs])
-        let day4 = RoutineDay(dayIndex: 4, muscleGroup: [.chest, .back, .shoulders, .biceps, .triceps])
+        let day4 = RoutineDay(dayIndex: 4, muscleGroup: [.chest, .back, .shoulders])
         let day5 = RoutineDay(dayIndex: 5, muscleGroup: [.legs, .abs])
         return [day1, day2, day3, day4, day5]
     case 6:
