@@ -12,7 +12,6 @@ struct OnboardingView: View {
     @StateObject private var ovm = OnboardingViewModel(totalOnboardingStates: 8)
     @FocusState var isNameFocused: Bool
     @FocusState var isWightFocused: Bool
-
     
     var body: some View {
         NavigationStack{
@@ -220,6 +219,8 @@ extension OnboardingView {
                     ovm.next()
                 }, buttonText: WorkoutDuration.text)
             }
+            
+            Text("Don't worry - you'll still be able to do workouts shorter than 45m with Rush Mode perfectly adapted to you goals for days when time's tight!")
             
             // TODO: Add tip here
             

@@ -10,18 +10,20 @@ import RealmSwift
 
 struct EntryView: View {
     
+    @StateObject var sharedViewModel = SharedViewModel()
+
     @ObservedResults(UserModel.self) var user
 
     var body: some View {
         ZStack {
             if let user = user.last, user.isUserOnboarded {
                 TabView {
-                    HomeView()
+                    HomeView(sharedViewModel: sharedViewModel)
                         .tabItem {
                             Label("Home", systemImage: "dumbbell")
                         }
                     
-                    WorkoutView()
+                    WorkoutView(sharedViewModel: sharedViewModel)
                         .tabItem {
                             Label("Workout", systemImage: "dumbbell")
                         }
