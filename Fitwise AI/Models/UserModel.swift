@@ -113,27 +113,28 @@ enum UserExperienceEnum: String, PersistableEnum {
 }
 
 enum UserGoalEnum: String, PersistableEnum {
-    case bodybuilding, strength, loseWeight
+    case bodybuilding, strength, loseWeight, longevity
     
     var text: String {
         switch self {
+            //TODO: ADD A CASE FOR LONGEVITY
         case .bodybuilding:
             return "Look Muscular & Toned"
         case .strength:
             return "Get Stronger, Faster"
         case .loseWeight:
             return "Lose Fat"
+        case .longevity:
+            return "Longevity & Healthspan"
         }
     }
 }
 
 enum UserWorkoutDurationEnum: String, PersistableEnum {
-    case min30, min45, min60, min90
+    case min45, min60, min90
     
     var int: Int {
         switch self {
-        case .min30:
-            return 30
         case .min45:
             return 45
         case .min60:
@@ -145,8 +146,6 @@ enum UserWorkoutDurationEnum: String, PersistableEnum {
     
     var text: String {
         switch self {
-        case .min30:
-            return "30m"
         case .min45:
             return "45m"
         case .min60:

@@ -36,183 +36,189 @@
 
 
 
-
-import SwiftUI
-
-struct WorkoutView: View {
-    let routineDays = generateRoutine()
-    //TODO: Right now, the current day is hardcoded. Make it dynamic!
-    let currentDay = 1
-    @StateObject private var hvm = HomeViewModel()
-
-
-    var body: some View {
-
-        ScrollView {
-            VStack(alignment: .leading) {
-
-                    let exercises = hvm.getExercises(.back, 8)
-
-                    ForEach(exercises) { exercise in
-                        Text(exercise.name)
-
-                        ForEach(Array(exercise.sets.enumerated()), id: \.offset)  { index, set in
-                            Text("\(String(format: "%g", set.targetWeight!)) x \(set.targetReps!)")
-                        }
-                }
-            }
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //
 //import SwiftUI
+//import RealmSwift
 //
 //struct WorkoutView: View {
-//    @State private var weight: Int?
-//    @State private var reps: Int?
 //    @StateObject private var hvm = HomeViewModel()
-//
-//    let routineDays = generateRoutine()
-//    //TODO: Right now, the current day is hardcoded. Make it dynamic!
-//    let currentDay = 1
-//
+//    @StateObject private var svm = SharedViewModel()
+//    
 //    var body: some View {
-//
-//        ScrollView {
-//            VStack(alignment: .leading) {
-//
-//                    let exercises = hvm.getExercises(.back)
-//
-//                    ForEach(exercises) { exercise in
-//                        Text(exercise.name)
-//                            .padding()
-//                            .font(.title3)
-//                            .fontWeight(.semibold)
-//
-//                        topView
-//
-//                        ForEach(Array(exercise.sets.enumerated()), id: \.offset)  { index, set in
-//                            
-//                            //TODO: Force unwrapping the target weight and reps here. They might not exist!
-//                            #warning("Force unwrapping the target weight and reps here. They might not exist")
-//                            HStack {
-//                                Text("Set: \(index+1)")
-//                                    .padding()
-//
-//                                Text("Weight: \(String(format: "%g", set.targetWeight!))")
-//                                    .padding()
-//
-//                                Text("Reps: \(set.targetReps!)")
-//                                    .padding()
-//
+//        
+//        VStack {
+//            Menu("Options"){
+//                ForEach(UserWorkoutFrequencyEnum.allCases, id: \.self) { btn in
+//                    Button("\(btn.text)", action: {
+//                        do {
+//                            let realm = try Realm()
+//                            if let user = realm.objects(UserModel.self).last {
+//                                try realm.write {
+//                                    user.workoutFrequency = btn
+//                                }
 //                            }
-//
-//                            
+//                        } catch {
+//                            print("Error updating user name: \(error.localizedDescription)")
 //                        }
+//                    })
+//                }
+//            }
+//            ScrollView {
+//                VStack(alignment: .leading) {
+//                    ForEach(svm.allExercises) { exercise in
+//                        Text(exercise.name + "(\(exercise.muscleGroup))")
 //                        
-////                        HStack(spacing: 0) {
-////                            Text("count here")
-////                                .frame(width: UIScreen.main.bounds.size.width/5)
-////
-////                            Text("50kg x 7")
-////                                .frame(width: UIScreen.main.bounds.size.width/5)
-////
-////                            TextField("52.5", value: $weight, formatter: NumberFormatter())
-////                                .frame(maxWidth: 80)
-////                                .fixedSize()
-////                                .textFieldStyle(.roundedBorder)
-////                                .multilineTextAlignment(.center)
-////                                .keyboardType(.numberPad)
-////                                .frame(width: UIScreen.main.bounds.size.width/5)
-////
-////
-////                            TextField("8", value: $reps, formatter: NumberFormatter())
-////                                .frame(maxWidth: 40)
-////                                .fixedSize()
-////                                .textFieldStyle(.roundedBorder)
-////                                .multilineTextAlignment(.center)
-////                                .keyboardType(.numberPad)
-////                                .frame(width: UIScreen.main.bounds.size.width/5)
-////
-////
-////                            Button {
-////                            } label: {
-////                                Image(systemName: "checkmark")
-////                                    .foregroundStyle(.gray)
-////                            }
-////                            .buttonStyle(.bordered)
-////                            .frame(width: UIScreen.main.bounds.size.width/5)
-////
-////
-////                        }
-//
+//                        ForEach(Array(exercise.sets.enumerated()), id: \.offset)  { index, set in
+//                            Text("\(index+1): \(String(format: "%g", set.targetWeight!)) x \(set.targetReps!)")
+//                        }
+//                    }
 //                }
 //            }
 //        }
 //    }
 //}
 //
-//extension WorkoutView {
-//    private var topView: some View {
-//        VStack {
-//            HStack(spacing: 0) {
-//                Text("SET")
-//                    .frame(width: UIScreen.main.bounds.size.width/5)
-//
-//                Text("PERVIOUS")
-//                    .frame(width: UIScreen.main.bounds.size.width/5)
 //
 //
-//                Text("KG")
-//                    .frame(width: UIScreen.main.bounds.size.width/5)
 //
-//
-//                Text("REPS")
-//                    .frame(width: UIScreen.main.bounds.size.width/5)
-//
-//                Text(Image(systemName: "checkmark"))
-//                    .frame(width: UIScreen.main.bounds.size.width/5)
-//
-//            }
-//            .padding(.bottom, 5)
-//            .font(.caption)
-//            .foregroundStyle(.secondary)
-//        }
-//
-//    }
-//}
-//
-//
-//#Preview {
-//    WorkoutView()
-//}
-//
-//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import SwiftUI
+
+struct WorkoutView: View {
+        
+    @State private var weight: Int?
+    @State private var reps: Int?
+    
+    @ObservedObject private var svm: SharedViewModel
+    
+    init(sharedViewModel: SharedViewModel) {
+        self.svm = sharedViewModel
+    }
+    
+    let routineDays = generateRoutine()
+    //TODO: Right now, the current day is hardcoded. Make it dynamic!
+    let currentDay = 1
+    
+    var body: some View {
+        
+        ScrollView {
+            VStack(alignment: .leading) {
+                
+                ForEach(svm.allExercises) { exercise in
+                    Text(exercise.name)
+                        .padding()
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                    
+                    topView
+                    
+                    ForEach(Array(exercise.sets.enumerated()), id: \.offset)  { index, set in
+                        
+                        /// cell view
+                        ExerciseSetCellView(weight: $weight, reps: $reps, setIndex: index, previousWeight: "NEW", targetWeight: set.targetWeight!, targetReps: set.targetReps!)
+                    }
+                }
+            }
+        }
+    }
+    
+    struct ExerciseSetCellView: View {
+        @Binding var weight: Int?
+        @Binding var reps: Int?
+        let setIndex: Int
+        let previousWeight: String
+        let targetWeight: Double
+        let targetReps: Int
+        
+        var body: some View {
+            HStack {
+                HStack(spacing: 0) {
+                    Text("\(setIndex + 1)")
+                        .frame(width: UIScreen.main.bounds.size.width / 5)
+                    
+                    Text(previousWeight)
+                        .frame(width: UIScreen.main.bounds.size.width / 5)
+                    
+                    TextField("\(String(format: "%g", targetWeight))", value: $weight, formatter: NumberFormatter())
+                        .frame(maxWidth: 80)
+                        .fixedSize()
+                        .textFieldStyle(.roundedBorder)
+                        .multilineTextAlignment(.center)
+                        .keyboardType(.numberPad)
+                        .frame(width: UIScreen.main.bounds.size.width / 5)
+                    
+                    TextField("\(targetReps)", value: $reps, formatter: NumberFormatter())
+                        .frame(maxWidth: 40)
+                        .fixedSize()
+                        .textFieldStyle(.roundedBorder)
+                        .multilineTextAlignment(.center)
+                        .keyboardType(.numberPad)
+                        .frame(width: UIScreen.main.bounds.size.width / 5)
+                    
+                    Button {
+                        // Add action for the button if needed
+                    } label: {
+                        Image(systemName: "checkmark")
+                            .foregroundStyle(.gray)
+                    }
+                    .buttonStyle(.bordered)
+                    .frame(width: UIScreen.main.bounds.size.width / 5)
+                }
+            }
+        }
+    }
+}
+
+extension WorkoutView {
+    private var topView: some View {
+        VStack {
+            HStack(spacing: 0) {
+                Text("SET")
+                    .frame(width: UIScreen.main.bounds.size.width/5)
+
+                Text("PERVIOUS")
+                    .frame(width: UIScreen.main.bounds.size.width/5)
+
+
+                Text("KG")
+                    .frame(width: UIScreen.main.bounds.size.width/5)
+
+
+                Text("REPS")
+                    .frame(width: UIScreen.main.bounds.size.width/5)
+
+                Text(Image(systemName: "checkmark"))
+                    .frame(width: UIScreen.main.bounds.size.width/5)
+
+            }
+            .padding(.bottom, 5)
+            .font(.caption)
+            .foregroundStyle(.secondary)
+        }
+
+    }
+}
