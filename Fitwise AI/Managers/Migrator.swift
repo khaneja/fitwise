@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class Migrator  {
+class Migrator {
     init() {
         updateSchema()
     }
@@ -17,8 +17,8 @@ class Migrator  {
     func updateSchema() {
         let config = Realm.Configuration(schemaVersion: 1) { migration, oldSchemaVersion in
             if oldSchemaVersion < 1 {
-                migration.enumerateObjects(ofType: ExerciseModel.className()) { oldObject, newObject in
-                    newObject!["equipments"]
+                migration.enumerateObjects(ofType: WorkoutModel.className()) { oldObject, newObject in
+                    newObject!["startDate"]
                 }
             }
         }

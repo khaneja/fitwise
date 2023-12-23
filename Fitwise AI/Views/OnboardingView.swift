@@ -60,6 +60,7 @@ struct OnboardingView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
+                    // https://sarunw.com/posts/custom-navigation-bar-title-view-in-swiftui/
                     Image(systemName: "bus")
                 }
                 

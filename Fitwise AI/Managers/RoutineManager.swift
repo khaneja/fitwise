@@ -10,8 +10,7 @@ import RealmSwift
 
 func generateRoutine() -> [RoutineDay] {
     
-    let realm = try! Realm()
-    let target = realm.objects(UserModel.self).last?.workoutFrequency.int
+    @ObservedResults(UserModel.self) var userModel
 
     //TODO: Put these into a separate file
     //TODO: Cardio
@@ -23,7 +22,7 @@ func generateRoutine() -> [RoutineDay] {
     
     //TODO: 1 day split: https://www.youtube.com/watch?v=xc4OtzAnVMI
     
-    switch target {
+    switch userModel.last!.workoutFrequency.int {
     case 2:
         //Full Body x2 [No abs]
         let day1 = RoutineDay(dayIndex: 1, muscleGroup: [.legs, .back, .chest, .shoulders, .biceps, .triceps, .abs])

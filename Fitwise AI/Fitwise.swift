@@ -24,6 +24,8 @@ import SwiftUI
 @main
 struct FitwiseApp: App {
     
+    let migrator = Migrator()
+    
     var body: some Scene {
         WindowGroup {
             EntryView()

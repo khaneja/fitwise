@@ -10,28 +10,29 @@ import RealmSwift
 
 struct EntryView: View {
     
-    @StateObject var sharedViewModel = SharedViewModel()
-
     @ObservedResults(UserModel.self) var user
 
     var body: some View {
         ZStack {
             if let user = user.last, user.isUserOnboarded {
+                @StateObject var sharedViewModel = SharedViewModel()
+
+                /// Don't initialize SharedViewModel() unless the user is onboarded
                 TabView {
-                    HomeView(sharedViewModel: sharedViewModel)
+                    HomeView()
                         .tabItem {
                             Label("Home", systemImage: "dumbbell")
                         }
-                    
-                    WorkoutView(sharedViewModel: sharedViewModel)
+                    HistoryView()
                         .tabItem {
-                            Label("Workout", systemImage: "dumbbell")
+                            Label("History", systemImage: "clock.arrow.circlepath")
                         }
                 }
+                .environmentObject(sharedViewModel)
+
             } else {
                 OnboardingView()
             }
-            
         }
     }
 }

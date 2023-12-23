@@ -32,15 +32,6 @@ class SharedViewModel: ObservableObject {
         userModel.last!.workoutFrequency.int
     }
     
-    /// The  number of sets the user should do per session
-    //    var setsPerSession: Int { calculateSetsPerSession() }
-    
-    /// The number of total sets the user can perform in a week (for all muscle groups)
-    //    var totalAvailableWeeklySets: Int { setsPerSession * totalTrainingDays }
-    
-    /// SPW  = Sets per week (allotted to each muscle)
-    //    var localSPW: Int { volumePerWeekPerBodypart() }
-    
     /// Total muscle groups. Chaning this will change the code!
     @Published var numMuscleGroups = 8
     
@@ -56,13 +47,11 @@ class SharedViewModel: ObservableObject {
     init() {
         start()
     }
-    
-    func removeAll() {
-//        allExercises.removeAll()
-        print(routineDays.first?.muscleGroup)
-    }
 
     func start() {
+        
+        allExercises.removeAll()
+        
         absBucket = bucketSet(direct: (volumePerWeekPerBodypart(muscle: .abs)), indirect: 0)
         bicepsBucket = bucketSet(direct: (volumePerWeekPerBodypart(muscle: .biceps)), indirect: 0)
         chestBucket = bucketSet(direct: (volumePerWeekPerBodypart(muscle: .chest)), indirect: 0)
@@ -78,6 +67,7 @@ class SharedViewModel: ObservableObject {
                 }
             }
         }
+
         removeSynergistics(allExercises)
         
         /// Custom exercise sort
@@ -89,18 +79,8 @@ class SharedViewModel: ObservableObject {
             }
             return index1 < index2
         }
-        
-        allExercises = allExercises
                 
-//
-//        print("--------- FINAL ———————")
-//        
-//        for exercise in allExercises {
-//            print(exercise.name + " - " + exercise.muscleGroup)
-//            exercise.sets.forEach {
-//                print("\(String(format: "%g", $0.targetWeight!)) x \($0.targetReps!)")
-//            }
-//        }
+        allExercises = allExercises
     }
     
     func getStats() -> [bucketSet] {
