@@ -11,11 +11,17 @@ import RealmSwift
 class WorkoutModel: Object, ObjectKeyIdentifiable {
     @Persisted(primaryKey: true) var _id: ObjectId
     @Persisted var name: String = "New Workout"
-    @Persisted var stateDate: Date
-    @Persisted var isCompleted: Bool //if it's not completed, then that means it is in cache
+    @Persisted var startDate: Date
+    @Persisted var isFinished: Bool //if it's not completed, then that means it is in cache.
     @Persisted var endDate: Date?
-    @Persisted var exercises: WorkoutExerciseModel?
+    @Persisted var exercises: List<WorkoutExerciseModel>
     
-    //for func getstared
+    convenience init(name: String, startDate: Date, exercises: List<WorkoutExerciseModel>) {
+        self.init()
+        self.name = name
+        self.startDate = startDate
+        self.isFinished = false
+        self.exercises = exercises
+    }
 }
 

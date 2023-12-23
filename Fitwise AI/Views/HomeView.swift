@@ -9,15 +9,13 @@ import SwiftUI
 import RealmSwift
 
 struct HomeView: View {
+    
     @ObservedResults(UserModel.self) var User
-    
+    @EnvironmentObject private var svm: SharedViewModel
+    @StateObject private var hvm = HomeViewModel()
     @State private var showingAlert = false
-    
-    @ObservedObject private var svm: SharedViewModel
-    
-    init(sharedViewModel: SharedViewModel) {
-        self.svm = sharedViewModel
-    }
+    @State private var showWorkoutView = false
+
 
     var body: some View {
         
@@ -25,8 +23,12 @@ struct HomeView: View {
             VStack {
                 List {
                     Section {
-                        Button("Start a Workout", systemImage: "plus") {
+                        Button("Start Workout", systemImage: "play.circle") {
+                            /// TODO (!) — The user in any case should not be able to start a new workout if the previous one hasn't been 1) deleted or 2) marked as finished
+                            hvm.startWorkout(svm.allExercises)
+                            showWorkoutView = true
                         }
+                        .fullScreenCover(isPresented: $showWorkoutView, content: WorkoutView.init)
                     }
                     
                     
@@ -51,38 +53,6 @@ struct HomeView: View {
                             .fontWeight(.semibold)
                             .padding(.vertical, 3)
                     }
-                    
-                    Button("Fuck it") {
-                        svm.removeAll()
-                    }
-                    
-                    Text("\(svm.routineDays.count)")
-                    
-//                    ForEach(routineDays, id: \.self) { day in
-//                        Section {
-//                            #warning("Exercises are not sorted properly")
-//                            //TODO: Sorting is bad! It should be as-it-is. Instead, it's picking muscle groups at random?
-//                            ForEach(day.muscleGroup, id: \.self) { muscleGroup in
-//                                Text(muscleGroup.text)
-//                                    .font(.title2)
-//                                    .fontWeight(.semibold)
-//                                
-//                                if day.dayIndex == currentDay {
-//                                    let exercises = hvm.getExercises(muscleGroup, 8)
-//                                    
-//                                    ForEach(exercises) { exercise in
-//                                        Text("\(exercise.name)")
-//                                            .padding(.leading, 15)
-//                                    }
-//                                }
-//                            }
-//                        } header: {
-//                            Text("Day \(day.dayIndex)")
-//                                .font(.title3)
-//                                .fontWeight(.semibold)
-//                                .padding(.vertical, 3)
-//                        }
-//                    }
                 }
                 .listStyle(.grouped)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -110,15 +80,11 @@ struct HomeView: View {
                         Label("Frequency", systemImage: "target")
                     }
                 }
-                
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        print(svm.allExercises.first!.name)
-                    } label: {
-                        Label("Stats", systemImage: "chart.bar")
-                    }
-                }
             }
         }
+//        .onChange(of: svm.totalTrainingDays) { _ in
+//            /// TODO: If there's a workout going on, don't regenerate the workout plan without showing an alert to the user that a workout is going on and chaning the plan is gonig to lose all the sets and shit
+//            svm.start()
+//        }
     }
 }

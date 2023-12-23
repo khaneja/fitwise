@@ -8,9 +8,15 @@
 import Foundation
 import RealmSwift
 
-class WorkoutExerciseModel: Object, ObjectKeyIdentifiable {
-    @Persisted(primaryKey: true) var _id: ObjectId
-    @Persisted var sets: WorkoutSetModel?
+class WorkoutExerciseModel: EmbeddedObject {
+    @Persisted var sets: List<WorkoutSetModel>
     @Persisted var unweighted: Bool //to show weight entry or not
     @Persisted var cardio: Bool //to show time entry or not
+    @Persisted var name: String
+    
+    convenience init(name: String, sets: List<WorkoutSetModel>, unweighted: Bool? = nil, cardio: Bool? = nil) {
+        self.init()
+        self.name = name
+        self.sets = sets
+    }
 }
