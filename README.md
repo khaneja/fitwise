@@ -1,6 +1,6 @@
-![fitwise_header](https://github.com/user-attachments/assets/dc7d343b-0852-46d2-8503-1768e70644d5)
+![fitwise_header](https://github.com/user-attachments/assets/662c8ef1-1623-4843-a1ba-bcfabc770a38)
 
-An evidence-based workout tracker. Released in the public domain.
+An evidence-based workout tracker. Released under the public domain.
 
 - Auto-generate workout plans.
 - Smart autoregulation that adjusts your training based on performance.
