@@ -60,7 +60,7 @@ Backend architected with [Realm SwiftUI](https://github.com/realm/realm-swift).
 
 Author | Contributing | Need Help?
 --- | --- | ---
-Fitwise was made by [Keshav](https://keshav.me). The first commit was during winter of 2023. | All contributions are welcome. Just [fork](https://github.com/khaneja/fitwise/fork) the repo, then make a pull request. | Open an [issue](https://github.com/khaneja/fitwise/issues). You can also ping me on [Twitter]([https://twitter.com/aheze0](https://twitter.com/khaneja52)).
+Fitwise was created [Keshav Khaneja](https://keshav.me) during winter of 2023. | All contributions are welcome. Just [fork](https://github.com/khaneja/fitwise/fork) the repo, then make a pull request. | Open an [issue](https://github.com/khaneja/fitwise/issues). You can also ping me on [Twitter]([https://twitter.com/aheze0](https://twitter.com/khaneja52)).
 
 
 ## License
