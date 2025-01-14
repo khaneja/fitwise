@@ -10,15 +10,11 @@ import RealmSwift
 
 struct HomeView: View {
     
-    @ObservedResults(UserModel.self) var User
     @EnvironmentObject private var svm: SharedViewModel
     @StateObject private var hvm = HomeViewModel()
-    @State private var showingAlert = false
-    @State private var showWorkoutView = false
-
+    @StateObject private var wvm = WorkoutViewModel()
 
     var body: some View {
-        
         NavigationStack {
             VStack {
                 List {
@@ -26,25 +22,27 @@ struct HomeView: View {
                         Button("Start Workout", systemImage: "play.circle") {
                             /// TODO (!) — The user in any case should not be able to start a new workout if the previous one hasn't been 1) deleted or 2) marked as finished
                             hvm.startWorkout(svm.allExercises)
-                            showWorkoutView = true
                         }
-                        .fullScreenCover(isPresented: $showWorkoutView, content: WorkoutView.init)
+                            .fullScreenCover(isPresented: $hvm.showWorkoutView, onDismiss: {
+                            if svm.presentationParentShouldDiscardWorkout { wvm.discardWorkout() }
+                        }, content: WorkoutView.init)
                     }
                     
-                    
-                    Section{
+                    Section {
                         ForEach(svm.allExercises) { exercise in
-                            VStack(alignment: .leading) {
-                                Text(exercise.name + " - \(exercise.muscleGroup)")
+                            NavigationLink(destination: ExerciseDetailView(exerciseObject: exercise.realmObj)) {
+                                VStack(alignment: .leading) {
+                                    Text(exercise.name)
 
-                                HStack(spacing: 0) {
-                                    if let weight = exercise.sets.first!.targetWeight {
-                                        Text("\(String(format: "%g", (weight))) x ")
+                                    HStack(spacing: 0) {
+                                        if let weight = exercise.sets.first!.targetWeight {
+                                            Text("\(String(format: "%g", (weight))) x ")
+                                        }
+                                        Text("\(exercise.sets.first!.targetReps!) x ")
+                                        Text("\(exercise.sets.count)")
                                     }
-                                    Text("\(exercise.sets.first!.targetReps!) x ")
-                                    Text("\(exercise.sets.count)")
+                                    .foregroundStyle(.secondary)
                                 }
-                                .foregroundStyle(.secondary)
                             }
                         }
                     } header: {
@@ -80,7 +78,22 @@ struct HomeView: View {
                         Label("Frequency", systemImage: "target")
                     }
                 }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        withAnimation {
+                            let realm = try! Realm()
+                            try! realm.write {
+                                realm.deleteAll()
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "bin")
+                    }
+                }
             }
+        }
+        .onAppear {
+            hvm.recoverWorkout()
         }
 //        .onChange(of: svm.totalTrainingDays) { _ in
 //            /// TODO: If there's a workout going on, don't regenerate the workout plan without showing an alert to the user that a workout is going on and chaning the plan is gonig to lose all the sets and shit

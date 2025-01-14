@@ -13,7 +13,7 @@ final class OnboardingViewModel: ObservableObject {
     let exerciseModel = ExerciseModel()
     
     @Published var totalOnboardingStates: Int
-    @Published var onboardingState: Int = 2
+    @Published var onboardingState: Int = 0
     @Published var transition: AnyTransition = .asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading))
     @Published var slider: Int = 3
     
@@ -73,6 +73,12 @@ final class OnboardingViewModel: ObservableObject {
         $userModel.append(newUser)
     }
     
+    func createDemoUser() {
+        seedAppData()
+        let demoUser = UserModel(name: "Keshav", gender: .male, workoutFrequency: .threetimes, goal: .bodybuilding, bodyType: .muscular, weight: 76, experience: .intermediate, workoutDuration: .min45, workoutDays: [.monday, .tuesday, .wednesday])
+        demoUser.isUserOnboarded = true
+        $userModel.append(demoUser)
+    }
     
     func toggleSelection(for day: UserWorkoutDayEnum, isSelected: Bool) {
         if isSelected {
@@ -93,7 +99,7 @@ final class OnboardingViewModel: ObservableObject {
                 realm.delete(realm.objects(ExerciseModel.self))
                 
                 for exercise in exercises {
-                    let newExercise = ExerciseModel(name: exercise.name, maleBwRatio: exercise.male_bw_ratio, femaleBwRatio: exercise.female_bw_ratio, aggressiveOverload: exercise.aggressive_overload, idJSON: exercise.id, paceCompatible: exercise.pace_compatible, repCompatible: exercise.rep_compatible, appIdJSON: exercise.app_id, powerLift: exercise.power_lift, hiitCompatible: exercise.hiit_compatible, notes: exercise.notes, highRepMovement: exercise.high_rep_movement, unweighted: exercise.unweighted, timeCompatible: exercise.time_compatible, twoSidedMovement: exercise.two_sided_movement)
+                    let newExercise = ExerciseModel(name: exercise.name, maleBwRatio: exercise.male_bw_ratio, femaleBwRatio: exercise.female_bw_ratio, aggressiveOverload: exercise.aggressive_overload, idJSON: exercise.id, paceCompatible: exercise.pace_compatible, repCompatible: exercise.rep_compatible, appIdJSON: exercise.app_id, powerLift: exercise.power_lift, hiitCompatible: exercise.hiit_compatible, notes: exercise.notes, highRepMovement: exercise.high_rep_movement, unweighted: exercise.unweighted, timeCompatible: exercise.time_compatible, twoSidedMovement: exercise.two_sided_movement, videoURL: exercise.video_url, mediaId: exercise.media_id)
                     newExercise.steps.append(objectsIn: exercise.steps)
                     
                     for equipment in exercise.equipment {

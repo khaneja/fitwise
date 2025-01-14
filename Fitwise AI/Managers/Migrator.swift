@@ -15,10 +15,10 @@ class Migrator {
     
     //TODO: This might just the stupidest migrator out there.
     func updateSchema() {
-        let config = Realm.Configuration(schemaVersion: 1) { migration, oldSchemaVersion in
+        let config = Realm.Configuration(schemaVersion: 3) { migration, oldSchemaVersion in
             if oldSchemaVersion < 1 {
-                migration.enumerateObjects(ofType: WorkoutModel.className()) { oldObject, newObject in
-                    newObject!["startDate"]
+                migration.enumerateObjects(ofType: ExerciseModel.className()) { oldObject, newObject in
+                    newObject!["mediaId"]
                 }
             }
         }

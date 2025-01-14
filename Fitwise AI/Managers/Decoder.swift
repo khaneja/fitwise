@@ -49,6 +49,8 @@ struct Exercise: Decodable {
     let time_compatible: Bool
     let equipment: [Equipment]
     let female_bw_ratio: Double
+    let video_url: String
+    let media_id: String
 }
 
 func decodeJSON() -> [Exercise] {

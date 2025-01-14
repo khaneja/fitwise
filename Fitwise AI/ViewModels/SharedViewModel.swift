@@ -17,6 +17,9 @@ var backBucket = bucketSet(direct: 0, indirect: 0)
 var legsBucket = bucketSet(direct: 0, indirect: 0)
 
 class SharedViewModel: ObservableObject {
+    /// 
+    var presentationParentShouldDiscardWorkout = false
+    
     
     /// Realm Models
     @ObservedResults(UserModel.self) var userModel
@@ -307,7 +310,7 @@ class SharedViewModel: ObservableObject {
             .filter("ANY primaryMuscleGroups.group = '\(muscleGroup.text)'")
             .sorted(byKeyPath: (userModel.last!.gender == .male ? "maleBwRatio" : "femaleBwRatio"), ascending: false)
         ///TODO BRING BACK THE +3
-            .prefix(distribution.count+3)
+            .prefix(distribution.count/*+3*/)
         
         let exerciseArray = Array(exercises).shuffled()
         

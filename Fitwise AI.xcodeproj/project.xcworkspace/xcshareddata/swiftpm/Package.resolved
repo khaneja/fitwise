@@ -1,4 +1,5 @@
 {
+  "originHash" : "995d5c2c0d36d2a6fd822fbf7d5f7d3a6b9839f73d370058804b6fce57146e23",
   "pins" : [
     {
       "identity" : "realm-core",
@@ -28,5 +29,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

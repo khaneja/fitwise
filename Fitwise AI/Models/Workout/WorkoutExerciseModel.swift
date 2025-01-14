@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-class WorkoutExerciseModel: EmbeddedObject {
+class WorkoutExerciseModel: EmbeddedObject, RealmFetchable {
     @Persisted var sets: List<WorkoutSetModel>
     @Persisted var unweighted: Bool //to show weight entry or not
     @Persisted var cardio: Bool //to show time entry or not

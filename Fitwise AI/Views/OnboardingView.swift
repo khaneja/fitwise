@@ -16,12 +16,16 @@ struct OnboardingView: View {
     var body: some View {
         NavigationStack{
             ZStack {
-                
                 switch ovm.onboardingState {
                 case 0:
                     genderView
                         .transition(ovm.transition)
                         .padding()
+                    #if DEBUG
+                    Button("Create demo user", systemImage: "plus") {
+                        ovm.createDemoUser()
+                    }
+                    #endif
                 case 1:
                     nameView
                         .transition(ovm.transition)
@@ -148,9 +152,7 @@ extension OnboardingView {
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .buttonStyle(.borderedProminent)
                 .padding(.vertical)
-                
                 .disabled(ovm.weight == nil)
-
             }
             
         }
