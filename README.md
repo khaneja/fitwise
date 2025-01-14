@@ -1,15 +1,13 @@
 ![fitwise_header](https://github.com/user-attachments/assets/662c8ef1-1623-4843-a1ba-bcfabc770a38)
 
-An evidence-based workout tracker. Released under the public domain.
+An evidence-based workout tracker based training science. Released under the public domain.
 
-- Auto-generate workout plans.
-- Smart autoregulation that adjusts your training based on performance.
-- Auto progressive overload with plateau detection.
-- Evidence-based algorithm based training science.
-- Exercise tutorials with videos.
+- Auto-generates workout plans w/ autoregulation (adjust training based on performance).
+- Smart progressive-overload & plateau detection.
+- Exercise videos.
 - SwiftUI-based core for a lightweight structure.
 - Runs 100% offline. No servers, nothing weird going on.
-- Fitwise is accessible & supports VoiceOver!
+- Accessible & supports VoiceOver!
 
 ## Showroom
 <table>
@@ -55,6 +53,87 @@ Exercise tutorials
 Backend architected with [Realm SwiftUI](https://github.com/realm/realm-swift). 
 
 ![Showcase](Features/Backend.png)
+
+## Inner workings
+
+The foundation of the algorithm is determining the volume per muscle group per week, adjusted for the user's:
+
+- Training frequency
+- Experience level
+
+The `volumePerWeekPerBodypart` function dynamically determines the weekly set volume per muscle group, accounting for user experience, frequency, and unique muscle properties.
+
+```swift
+func volumePerWeekPerBodypart(muscle: MuscleGroupEnum) -> Int {
+    var volume = 0
+    
+    if userModel.last!.workoutFrequency.int <= 2 {
+        switch userModel.last!.experience {
+        case .beginner: volume = 6
+        case .intermediate: volume = 6
+        case .advanced: volume = 8
+        }
+    } 
+}
+```
+
+Then, the `distributeSets` function splits the weekly set volume into smaller, actionable groups for each session. (Example: Distribution: 17 sets → [4, 4, 3]. So, 3 exercises — the first two with 4 sets and the third one with 3.)
+
+Finally, `addExercises` takes all the inputs and creates a day’s routine while accounting for both primary & secondary muscle activations
+
+```swift
+func addExercises(muscleGroup: MuscleGroupEnum)  {
+    let distribution = distributeSets(volumePerWeekPerBodypart(muscle: muscleGroup))
+    let exerciseObjects = getExerciseObject(muscleGroup: muscleGroup, distribution: distribution)
+    let exercises = createExercisesFromExerciseObject(exerciseObjects, distribution: distribution)
+
+    for exercise in exercises {
+        var processedMuscleGroups: Set<String> = []
+        
+        for secondaryMuscleGroup in exercise.realmObj.muscleGroups {
+            if secondaryMuscleGroup.activation_percent >= 0.6 && 
+               secondaryMuscleGroup.group != exercise.realmObj.primaryMuscleGroups.first!.group &&
+               !processedMuscleGroups.contains(secondaryMuscleGroup.group) {
+                // ... handle  muscle groups
+                }
+                processedMuscleGroups.insert(secondaryMuscleGroup.group)
+            }
+        }
+    }
+
+    allExercises.append(contentsOf: exercises)
+}
+```
+
+Note: Local `SPW` is the weekly volume per muscle. To avoid exhausting weekly volume in just one single session, it is adjusted based on the number of sessions _per week_ targeting that muscle preventing overtraining.
+
+To further avoid overtraining, the removeSynergistics function adjusts exercises by removing excessive secondary activations to balances direct & indirect training volume. 
+
+```swift
+func removeSynergistics(_ exercises: [ExerciseViewDataModel]) {
+    muscleGroupData.allCases.forEach {
+        if $0.bucket.indirect > 0 {
+            let numberOfSets = $0.bucket.direct - $0.bucket.indirect
+            removeAndReAddExercise(muscleGroup: $0.enumValue, newNumberOfSets: (numberOfSets >= 3 ? numberOfSets : 2))
+        }
+    }
+}
+```
+
+## Resources
+
+Fitwise is fully open-source and I intend to be as transparent as possible. Here's some resources & links:
+
+A large part of the training algorithm was based on [Dr. Mike Israetel's course](https://www.youtube.com/playlist?list=PLyqKj7LwU2RuRKOeHg3mv_hLHI4Z-FAJD) on hypotrophy!
+
+![source](https://github.com/user-attachments/assets/592b9a1b-9253-46a9-82d2-629c4f6c51ce)
+
+- https://pubmed.ncbi.nlm.nih.gov/27433992/
+- https://pubmed.ncbi.nlm.nih.gov/35291645/
+- https://journals.lww.com/nsca-jscr/Fulltext/2010/07000/The_Effect_of_Autoregulatory_Progressive.3.aspx
+- https://journals.lww.com/nsca-jscr/Abstract/2010/01001/The_Effect_Of_Daily_Undulated_Periodization_As.1.aspx
+- https://pmc.ncbi.nlm.nih.gov/articles/PMC2956949/
+
 
 ## Community
 
