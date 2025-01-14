@@ -122,12 +122,9 @@ func removeSynergistics(_ exercises: [ExerciseViewDataModel]) {
 
 ## Resources
 
-Fitwise is fully open-source and I intend to be as transparent as possible. Here's some resources & links:
+Fitwise is fully open-source and I intend to be as transparent as possible. Here are the resources used during development:
 
-A large part of the training algorithm was based on [Dr. Mike Israetel's course](https://www.youtube.com/playlist?list=PLyqKj7LwU2RuRKOeHg3mv_hLHI4Z-FAJD) on hypotrophy!
-
-![source](https://github.com/user-attachments/assets/592b9a1b-9253-46a9-82d2-629c4f6c51ce)
-
+- A large part of the training algorithm was based on [Dr. Mike Israetel's course](https://www.youtube.com/playlist?list=PLyqKj7LwU2RuRKOeHg3mv_hLHI4Z-FAJD) on hypotrophy!![source](https://github.com/user-attachments/assets/592b9a1b-9253-46a9-82d2-629c4f6c51ce)
 - https://pubmed.ncbi.nlm.nih.gov/27433992/
 - https://pubmed.ncbi.nlm.nih.gov/35291645/
 - https://journals.lww.com/nsca-jscr/Fulltext/2010/07000/The_Effect_of_Autoregulatory_Progressive.3.aspx
